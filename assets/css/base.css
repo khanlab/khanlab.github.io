@@ -28,15 +28,14 @@ body {
 }
 
 #navlist {
-  z-index: 997;
+  z-index: 998;
   list-style: none;
-  position: fixed;
+  position: absolute;
   top: 25vw;
   left: 0vw;
   width: 100vw;
   height: auto;
   background-color: rgb(240, 240, 240, 0.9);
-  display: inline-block;
   flex-direction: column;
   justify-content: space-around;
   transform: translateY(-100vw);
@@ -71,12 +70,13 @@ body {
 
 #nav-toggle {
   z-index: 1000;
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 2vw;
+  top: 6.5vw;
+  right: 7.5vw;
   width: 5vw;
   height: 1vw;
   cursor: pointer;
@@ -85,9 +85,6 @@ body {
 }
 
 #hamburger {
-  position: fixed;
-  top: 11.5vw;
-  right: 7.5vw;
   width: 5vw;
   height: 1vw;
   background-color: rgb(0, 0, 80);
@@ -99,7 +96,7 @@ body {
 #hamburger::before,
 #hamburger::after {
   content: "";
-  position: fixed;
+  position: absolute;
   width: 5vw;
   height: 1vw;
   background-color: rgb(0, 0, 80);
@@ -129,14 +126,14 @@ body {
   transform: rotate(-45deg);
 }
 
+#body-container {
+  margin: 15vw 7.5vw 3vw;
+}
+
 #footer {
   display: table;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   font-size: 1.75vw;
-}
-
-#body-container {
-  margin: 15vw 7.5vw 3vw;
 }
