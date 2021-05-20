@@ -1,0 +1,45 @@
+.group {
+    margin-bottom: 2vh;
+}
+
+.group p {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.group #grad {
+    display: block;
+    margin-top: 2.5vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.partners {
+    margin-top: 2.5vw;
+}
+
+.partners ul {
+    display: inline-table;
+    list-style: none;
+}
+
+.partners li {
+    display: inline;
+
+}
+
+/* Large screens */
+@media only screen and (min-width: 1024px) {
+    .group {
+        margin-bottom: 2vw;
+    }
+
+    .group p {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .group #grad {
+        margin-top: 1.5vw;
+    }
+}
