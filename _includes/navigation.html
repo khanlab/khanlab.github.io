@@ -1,0 +1,14 @@
+<nav class="navbar">
+  <img
+    src="/assets/images/khanlab_logo.png"
+    alt="Khan Computational Imaging Lab"
+    width="40%"
+    height="auto"
+  />
+
+  <ul class="navlist">
+    {% for item in site.data.navigation %}
+    <li><a href="{{ item.link }}" class="navlink">{{ item.name }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>

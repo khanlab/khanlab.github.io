@@ -1,0 +1,10 @@
+- name: Home
+  link: /
+- name: Research
+  link: /research.html
+- name: People
+  link: /people.html
+- name: Join
+  link: /join.html
+- name: Contact
+  link: /contact.html
