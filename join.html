@@ -44,16 +44,14 @@ grad_recruit: true
     <h2>Internship opportunities</h2>
     <hr>
     <p>{{ internship.blurb }}</p>
-
-    <ul class="partners">
+    
+    <div class="partners">
         {% for partner in internship.partners %}
-        <li>
             <a href="{{ partner.link }}">
                 <img alt="{{ partner.name }}" src="{{ partner.image }}">
             </a>
-        </li>
         {% endfor %}
-    </ul>
+    </div>
 </div>
 
 <div class="group">
