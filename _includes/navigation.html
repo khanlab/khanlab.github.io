@@ -1,4 +1,4 @@
-<nav class="navbar">
+<nav id="navbar">
   <img
     src="/assets/images/khanlab_logo.png"
     alt="Khan Computational Imaging Lab"
@@ -6,7 +6,7 @@
     height="auto%"
   />
 
-  <ul class="navlist">
+  <ul id="navlist">
     {% for item in site.data.navigation %}
     <li><a href="{{ item.link }}" class="navlink">{{ item.name }}</a></li>
     {% endfor %}
