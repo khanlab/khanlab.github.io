@@ -7,6 +7,7 @@
 }
 
 body {
+  min-height: 100%;
   background-color: rgb(240, 240, 240);
   font-family: "Merriweather Sans", sans-serif;
 }
@@ -48,14 +49,14 @@ body {
 
 #navlist li {
   padding-left: 5vw;
-  padding-bottom: 3vw;
+  padding-bottom: 4vw;
 }
 
 .navlink {
   font-family: "Lato", sans-serif;
   color: rgb(0, 0, 80);
   text-shadow: 0.1vw 0 #000;
-  font-size: 2.5vw;
+  font-size: 2vh;
   letter-spacing: 0.2vw;
   text-decoration: none;
   text-transform: uppercase;
@@ -131,7 +132,7 @@ body {
 }
 
 #footer {
-  position: relative;
+  position: absolute;
   bottom: 0;
   background-color: rgb(0,0,80);
   width: 100%;
