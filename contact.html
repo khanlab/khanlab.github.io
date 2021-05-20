@@ -4,9 +4,7 @@ style: /assets/css/contact.css
 title: "CONTACT |"
 ---
 <!-- Grab data from file -->
-{% for contact_hash in site.data.contact %}
-{% assign contact = contact_hash[1] %}
-{% endfor %}
+{% assign contact = site.data.contact.info %}
 
 <h2>Contact</h2>
 <hr>
