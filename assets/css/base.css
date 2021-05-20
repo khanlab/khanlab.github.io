@@ -132,13 +132,7 @@ body {
 }
 
 #footer {
-  position: absolute;
-  bottom: 0;
   background-color: rgb(0,0,80);
-  width: 100%;
-  height: auto;
-  text-align: center;
-  margin: auto;
   color: rgb(240, 240, 240);
 }
 

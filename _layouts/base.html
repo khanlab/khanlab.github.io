@@ -32,7 +32,7 @@
     {% endif %}
   </head>
 
-  <body>
+  <body class="d-flex flex-column h-100">
     <!-- Navigation -->
     <header>{% include navigation.html %}</header>
 
@@ -40,7 +40,7 @@
     <main id="body-container">{{ content }}</main>
 
     <!-- Footer -->
-    <footer id="footer">{% include footer.html %}</footer>
+    <footer id="footer" class="mt-auto navbar navbar-expand-xl justify-content-center">{% include footer.html %}</footer>
 
     <!-- Javascript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
