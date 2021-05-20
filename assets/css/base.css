@@ -21,7 +21,7 @@ body {
 #navbar img {
   z-index: 1000;
   background-color: rgb(240, 240, 240);
-  width: 35%;
+  width: 35vw;
   height: auto;
   margin-top: 15vw;
   margin-left: 5vw;
@@ -133,6 +133,42 @@ body {
 #footer {
   display: table;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 1.5vw auto;
+}
+
+/* Large screens */
+@media only screen and (min-width: 1024px) {
+  #navbar {
+    height: 2.5vw;
+  }
+
+  #navbar img {
+    width: 25vw;
+  }
+
+  #navlist {
+    position: initial;
+    width: initial; 
+    height: initial;
+    background-color: transparent;
+    display: inline-flex;
+    justify-content: initial;
+    flex-direction: row;
+    transform: initial;
+    transition: initial;
+    margin-top: 18.5vw;
+    margin-right: 7.5vw;
+  }
+
+  .navlink {
+    font-size: 1.75vw;
+  }
+
+  #nav-toggle {
+    display: none;
+  }
+
+  #body-container {
+    margin-top: 15vw;
+  }
 }
