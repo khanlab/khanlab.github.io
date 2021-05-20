@@ -131,9 +131,13 @@ body {
 }
 
 #footer {
-  display: table;
+  position: relative;
+  background-color: rgb(0, 0, 80);
+  width: 100%;
+  bottom: 0;
   text-align: center;
-  margin: 1.5vw auto;
+  margin: auto;
+  color: rgb(240, 240, 240);
 }
 
 /* Large screens */
@@ -148,7 +152,7 @@ body {
 
   #navlist {
     position: initial;
-    width: initial; 
+    width: initial;
     height: initial;
     background-color: transparent;
     display: inline-flex;
