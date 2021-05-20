@@ -127,7 +127,7 @@ body {
 }
 
 #body-container {
-  margin: 15vw 7.5vw 3vw;
+  margin: 15vw 7.5vw 4vw;
 }
 
 #footer {
@@ -135,5 +135,4 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  font-size: 1.75vw;
 }
