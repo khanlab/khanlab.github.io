@@ -27,7 +27,9 @@
     />
 
     <link href="/assets/css/base.css" rel="stylesheet" type="text/css" />
-    {{ page.css }}
+    {% if page.style %}
+      <link rel="stylesheet" href="{{ page.style }}">
+    {% endif %}
   </head>
 
   <body>
