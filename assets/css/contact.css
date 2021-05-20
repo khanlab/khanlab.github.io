@@ -1,13 +1,3 @@
-h2 {
-  font-family: "Lato", sans-serif;
-  color: rgb(0, 0, 80);
-  text-shadow: 0.1vw 0 #000;
-  font-size: 8vw;
-  letter-spacing: 0.2vw;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
 ul {
   list-style: none;
   margin-left: 0;
@@ -29,10 +19,6 @@ a {
 
 /* Large screens */
 @media only screen and (min-width: 1024px) {
-    h2 {
-        font-size: 3vw;
-    }
-
     #info {
         float: left;
         width: 40vw;

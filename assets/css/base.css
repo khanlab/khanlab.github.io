@@ -135,6 +135,16 @@ body {
   color: rgb(240, 240, 240);
 }
 
+h2 {
+  font-family: "Lato", sans-serif;
+  color: rgb(0, 0, 80);
+  text-shadow: 0.1vw 0 #000;
+  font-size: 8vw;
+  letter-spacing: 0.2vw;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 /* Large screens */
 @media only screen and (min-width: 1024px) {
   #navbar {
@@ -169,5 +179,9 @@ body {
 
   #body-container {
     margin-top: 15vw;
+  }
+
+  h2 {
+    font-size: 3vw;
   }
 }
