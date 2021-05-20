@@ -3,12 +3,14 @@ layout: base
 style: /assets/css/contact.css
 title: "CONTACT |"
 ---
+<!-- Grab data from file -->
+{% for contact_hash in site.data.contact %}
+{% assign contact = contact_hash[1] %}
+{% endfor %}
 
 <h2>Contact</h2>
 <hr>
 <div id="info">
-    {% for contact_hash in site.data.contact %}
-    {% assign contact = contact_hash[1] %}
     <p>
         <strong>{{ contact.name }}</strong><br/>
         {{ contact.title }}
@@ -32,7 +34,6 @@ title: "CONTACT |"
         Tel: {{ contact.phone }}<br/>
         Email: <a href="mailto: {{ contact.email }}">{{ contact.email }}</a>
     </p>
-    {% endfor %}
 </div>
     
 <div id="map">
