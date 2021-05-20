@@ -17,6 +17,7 @@
 }
 
 .partners img {
+    width: 15vh;
     margin: 2.5vw;
 }
 
@@ -33,5 +34,9 @@
 
     .group #grad {
         margin-top: 1.5vw;
+    }
+
+    .partners img {
+        width: 15vw;
     }
 }
