@@ -1,3 +1,3 @@
-- Position: <position>
-  Location: <location>
-  Description: <description>
+- role: <role>
+  location: <location>
+  description: <description>

@@ -9,23 +9,15 @@
 
 .group #grad {
     display: block;
-    margin-top: 2.5vw;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2.5vw auto 0;
 }
 
 .partners {
-    margin-top: 2.5vw;
+    text-align: center;
 }
 
-.partners ul {
-    display: inline-table;
-    list-style: none;
-}
-
-.partners li {
-    display: inline;
-
+.partners img {
+    margin: 2.5vw;
 }
 
 /* Large screens */
