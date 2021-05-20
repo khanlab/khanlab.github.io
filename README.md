@@ -5,6 +5,8 @@ structured such that each page's associated data has a corresponding folder (if
 necessary) under `_data` and _`assets` (for images). Page templates and common 
 elements are stored in `_layouts` and `_includes` respectively.
 
+_A Jupyter notebook with a Github Actions cron job will be utilized to update recent publications on a monthly basis_
+
 See below for instructions on modifying each page. To modify or update a page, please make the necessary changes make a pull request to the repository!
 
 ## `join.html`
