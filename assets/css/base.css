@@ -77,7 +77,7 @@ body {
   font-size: 2vh;
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: .75vw;
+  letter-spacing: 0.75vw;
   margin-top: 2.5vw;
   margin-left: 5vw;
 }
@@ -92,7 +92,7 @@ body {
 
 .nav-link:hover {
   text-decoration: underline;
-  text-decoration-thickness: .25vw;
+  text-decoration-thickness: 0.25vw;
   text-underline-offset: 1.5vw;
 }
 
@@ -124,10 +124,10 @@ h2 {
   .navbar-nav {
     margin-left: 8vw;
   }
-  
+
   .nav-item {
     font-size: 1.5vw;
-    letter-spacing: .5vw;
+    letter-spacing: 0.5vw;
   }
 
   .nav-link:hover {
