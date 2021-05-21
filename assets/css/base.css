@@ -1,5 +1,4 @@
 /* Base CSS */
-
 * {
   margin: 0;
   padding: 0;
@@ -11,127 +10,98 @@ body {
   font-family: "Merriweather Sans", sans-serif;
 }
 
-#navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 10vw;
-}
-
-#navbar img {
-  z-index: 1000;
-  background-color: rgb(240, 240, 240);
+.nav-brand {
   width: 35vw;
-  height: auto;
-  margin-top: 15vw;
-  margin-left: 5vw;
+  margin-left: 2.5vw;
+  margin-top: 2.5vw;
 }
 
-#navlist {
-  z-index: 998;
-  list-style: none;
-  position: absolute;
-  top: 25vw;
-  left: 0vw;
-  width: 100vw;
-  height: auto;
-  background-color: rgb(240, 240, 240, 0.9);
-  flex-direction: column;
-  justify-content: space-around;
-  transform: translateY(-100vw);
-  transition: transform 0.5s;
+.navbar-light .navbar-toggler {
+  color: transparent;
+  border-color: transparent;
 }
 
-.open #navlist {
-  transform: translateY(0vw);
-}
-
-#navlist li {
-  padding-left: 5vw;
-  padding-bottom: 4vw;
-}
-
-.navlink {
-  font-family: "Lato", sans-serif;
-  color: rgb(0, 0, 80);
-  text-shadow: 0.1vw 0 #000;
-  font-size: 2vh;
-  letter-spacing: 0.2vw;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.navlink:hover {
-  color: rgb(0, 0, 80);
-  text-decoration: underline;
-  text-decoration-thickness: 0.5vw;
-  text-underline-offset: 1.25vw;
-}
-
-#nav-toggle {
-  z-index: 1000;
+.animated-icon {
+  width: 30px;
+  height: 20px;
+  margin-top: 2.5vw;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  top: 6.5vw;
-  right: 7.5vw;
-  width: 5vw;
-  height: 1vw;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
   cursor: pointer;
-  color: rgb(0, 0, 80);
-  transition: all 0.5s ease-in-out;
 }
 
-#hamburger {
-  width: 5vw;
-  height: 1vw;
-  background-color: rgb(0, 0, 80);
-  border-radius: 0.5vw;
-  border: none;
-  transition: all 0.5s ease-out;
-}
-
-#hamburger::before,
-#hamburger::after {
-  content: "";
+.animated-icon span {
+  display: block;
   position: absolute;
-  width: 5vw;
-  height: 1vw;
-  background-color: rgb(0, 0, 80);
-  border-radius: 0.5vw;
-  border: none;
+  height: 3px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+  background: rgb(0, 0, 80);
 }
 
-#hamburger::before {
-  transform: translateY(-1.5vw);
+.animated-icon span:nth-child(1) {
+  top: 0px;
 }
 
-#hamburger::after {
-  transform: translateY(1.5vw);
+.animated-icon span:nth-child(2),
+.animated-icon span:nth-child(3) {
+  top: 10px;
 }
 
-.open #hamburger {
-  background: transparent;
+.animated-icon span:nth-child(4) {
+  top: 20px;
 }
 
-.open #hamburger::before {
-  transform-origin: (0, 0);
+.animated-icon.open span:nth-child(1),
+.animated-icon.open span:nth-child(4) {
+  top: 11px;
+  width: 0%;
+  left: 50%;
+}
+
+.animated-icon.open span:nth-child(2) {
   transform: rotate(45deg);
 }
 
-.open #hamburger::after {
-  transform-origin: (0, 0);
+.animated-icon.open span:nth-child(3) {
   transform: rotate(-45deg);
 }
 
+.nav-item {
+  font-family: "Lato", sans-serif;
+  font-size: 2vh;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .75vw;
+  margin-top: 2.5vw;
+  margin-left: 5vw;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(0, 0, 80);
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: .25vw;
+  text-underline-offset: 1.5vw;
+}
+
 #body-container {
-  margin: 15vw 7.5vw 4vw;
+  margin: 5vw 7.5vw 4vw;
 }
 
 #footer {
-  background-color: rgb(0,0,80);
+  background-color: rgb(0, 0, 80);
   color: rgb(240, 240, 240);
 }
 
@@ -147,38 +117,27 @@ h2 {
 
 /* Large screens */
 @media only screen and (min-width: 1024px) {
-  #navbar {
-    height: 2.5vw;
-  }
-
-  #navbar img {
+  .nav-brand {
     width: 25vw;
   }
 
-  #navlist {
-    position: initial;
-    width: initial; 
-    height: initial;
-    background-color: transparent;
-    display: inline-flex;
-    justify-content: initial;
-    flex-direction: row;
-    transform: initial;
-    transition: initial;
-    margin-top: 18.5vw;
-    margin-right: 7.5vw;
+  .navbar-nav {
+    margin-left: 8vw;
+  }
+  
+  .nav-item {
+    font-size: 1.5vw;
+    letter-spacing: .5vw;
   }
 
-  .navlink {
-    font-size: 1.75vw;
-  }
-
-  #nav-toggle {
-    display: none;
+  .nav-link:hover {
+    text-underline-offset: 1vw;
   }
 
   #body-container {
-    margin-top: 15vw;
+    margin-top: 2.5vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
   }
 
   h2 {
