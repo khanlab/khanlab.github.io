@@ -28,7 +28,7 @@
 
     <link href="/assets/css/base.css" rel="stylesheet" type="text/css" />
     {% if page.style %}
-      <link rel="stylesheet" href="{{ page.style }}">
+    <link rel="stylesheet" href="{{ page.style }}" />
     {% endif %}
   </head>
 
@@ -40,10 +40,20 @@
     <main id="body-container">{{ content }}</main>
 
     <!-- Footer -->
-    <footer id="footer" class="mt-auto navbar navbar-expand-xl justify-content-center">{% include footer.html %}</footer>
+    <footer
+      id="footer"
+      class="mt-auto navbar navbar-expand-xl justify-content-center"
+    >
+      {% include footer.html %}
+    </footer>
 
     <!-- Javascript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
     <script src="/assets/js/custom.js"></script>
   </body>
 </html>
