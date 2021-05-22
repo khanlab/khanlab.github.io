@@ -8,6 +8,7 @@
 body {
   background-color: rgb(240, 240, 240);
   font-family: "Merriweather Sans", sans-serif;
+  font-size: 1.5vh;
 }
 
 .nav-brand {
@@ -74,7 +75,7 @@ body {
 
 .nav-item {
   font-family: "Lato", sans-serif;
-  font-size: 2vh;
+  font-size: 1.5vh;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.75vw;
@@ -96,13 +97,11 @@ body {
   text-underline-offset: 1.5vw;
 }
 
-#body-container {
-  margin: 5vw 7.5vw 4vw;
-}
-
-#footer {
-  background-color: rgb(0, 0, 80);
-  color: rgb(240, 240, 240);
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  text-align: center;
 }
 
 h2 {
@@ -117,27 +116,25 @@ h2 {
 
 /* Large screens */
 @media only screen and (min-width: 1024px) {
+  body {
+    font-size: 1.25vw;
+  }
+
   .nav-brand {
-    width: 25vw;
+    width: 20vw;
   }
 
   .navbar-nav {
-    margin-left: 8vw;
+    margin-left: 18vw;
   }
 
   .nav-item {
-    font-size: 1.5vw;
+    font-size: 1.25vw;
     letter-spacing: 0.5vw;
   }
 
   .nav-link:hover {
     text-underline-offset: 1vw;
-  }
-
-  #body-container {
-    margin-top: 2.5vw;
-    margin-left: 10vw;
-    margin-right: 10vw;
   }
 
   h2 {

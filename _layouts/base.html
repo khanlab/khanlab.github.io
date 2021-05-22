@@ -37,13 +37,13 @@
     <header>{% include navigation.html %}</header>
 
     <!-- Body -->
-    <main id="body-container">{{ content }}</main>
+    <main>
+      <div class="container">{{ content }}</div>
+    </main>
 
     <!-- Footer -->
-    <footer
-      id="footer"
-      class="mt-auto navbar navbar-expand-xl justify-content-center"
-    >
+    <footer class="footer mt-auto py-2 justify-content-center">
+      <hr>
       {% include footer.html %}
     </footer>
 
