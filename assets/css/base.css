@@ -125,6 +125,10 @@ h2 {
   text-transform: uppercase;
 }
 
+.footer {
+  font-size: .75vh;
+}
+
 /* Large screens */
 @media only screen and (min-width: 1024px) {
   body {
@@ -150,5 +154,9 @@ h2 {
 
   h2 {
     font-size: 3vw;
+  }
+
+  .footer {
+    font-size: .75vw;
   }
 }
