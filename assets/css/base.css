@@ -126,7 +126,7 @@ h2 {
 }
 
 .footer {
-  font-size: .75vh;
+  font-size: 0.75vh;
 }
 
 /* Large screens */
@@ -157,6 +157,21 @@ h2 {
   }
 
   .footer {
-    font-size: .75vw;
+    font-size: 0.75vw;
+  }
+
+  .fas,
+  .fab {
+    color: rgb(0, 0, 80);
+  }
+
+  .fas:hover,
+  .fab:hover {
+    text-decoration: underline;
+    text-underline-offset: .25vw;
+  }
+
+  .socials {
+    vertical-align: bottom;
   }
 }

@@ -1,0 +1,66 @@
+.media {
+    width: 100%;
+}
+
+.member-photo {
+    width: 7.5vh;
+    border-radius: 25vw;
+}
+
+.media-heading {
+    background-color: rgb(240, 240, 240);
+    font-size: 1.5vh;
+    border: none;
+}
+
+.media-heading:hover {
+    text-decoration: underline;
+    text-underline-offset: .25vh;
+}
+
+.info {
+    font-size: 1.25vh;
+}
+
+.socials {
+    display: None;
+}
+
+/* Large screens */
+@media only screen and (min-width: 1024px) {
+    .member-photo {
+        width: 10vw;
+    }
+
+    .media-heading {
+        font-size: 1.5vw;
+    }
+
+    .media-heading:hover {
+        text-underline-offset: .25vw;
+    }
+
+    .info {
+        font-size: 1vw;
+    }
+    
+    .socials {
+        display: initial;
+    }
+
+    .socials a {
+        margin-right: .25vw;
+    }
+
+    .member-affiliation {
+        margin-top: 1vw;
+    }
+
+    .member-socials {
+        list-style: None;
+    }
+
+    .member-socials a {
+        color: rgb(0, 0, 80);
+    }
+}
