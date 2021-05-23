@@ -15,7 +15,7 @@ body {
   margin-top: 1.5vh;
   margin-bottom: 1.5vh;
   width: 85vw;
-  height: 85vh;
+  min-height: 100vh;
 }
 
 .nav-brand {
@@ -105,14 +105,12 @@ body {
 }
 
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
   width: 100vw;
   margin-top: 1vh;
   background-color: rgb(0, 0, 80);
   color: rgb(240, 240, 240);
   text-align: center;
+  font-size: 0.75vh;
 }
 
 h2 {
@@ -123,10 +121,6 @@ h2 {
   letter-spacing: 0.2vw;
   text-decoration: none;
   text-transform: uppercase;
-}
-
-.footer {
-  font-size: 0.75vh;
 }
 
 /* Large screens */
