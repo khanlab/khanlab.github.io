@@ -23,6 +23,8 @@
 
 .info {
     font-size: 1.25vh;
+    padding: 0;
+    width: 100%;
 }
 
 .socials {
@@ -76,6 +78,10 @@
 
     .col-xl-4 {
         border-right: .1vw solid rgb(0, 0, 80);
+    }
+
+    .horizontal-profile {
+        border-bottom: none;
     }
 
 
