@@ -2,7 +2,7 @@
 # Fields can be left blank! 
 name: Full Name
 position: Postdoctoral Fellow, PhD Student, Master's Student, etc.
-department: Department of Medical Biophysics
+affiliation: Department of Medical Biophysics
 cosupervisor: <if co-supervised>
 image: /asset/images/people/<user>.png
 alumni: false/true

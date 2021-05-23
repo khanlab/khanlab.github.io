@@ -2,7 +2,7 @@
 name: Uzair Hussain
 degree: PhD
 position: Postdoctoral fellow 
-department: Robarts Research Insititute
+affiliation: Robarts Research Insititute
 cosupervisor: Dr. Corey Baron
 image:
 alumni: false
