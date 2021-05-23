@@ -5,6 +5,9 @@
 .member-photo {
     width: 7.5vh;
     border-radius: 25vw;
+    outline: rgb(0, 0, 80);
+    outline-style: solid;
+    outline-width: .25vh;
 }
 
 .media-heading {
@@ -24,6 +27,16 @@
 
 .socials {
     display: None;
+    
+}
+
+.member-socials {
+    list-style: None;
+    padding-left: 0;
+}
+
+.member-socials a {
+    color: rgb(0, 0, 80);
 }
 
 /* Large screens */
@@ -56,11 +69,5 @@
         margin-top: 1vw;
     }
 
-    .member-socials {
-        list-style: None;
-    }
 
-    .member-socials a {
-        color: rgb(0, 0, 80);
-    }
 }
