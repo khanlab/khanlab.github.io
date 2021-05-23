@@ -39,6 +39,11 @@
     color: rgb(0, 0, 80);
 }
 
+.horizontal-profile {
+    border-bottom: .1vh solid rgb(0, 0, 80);
+    margin-bottom: 1vh;
+}
+
 /* Large screens */
 @media only screen and (min-width: 1024px) {
     .member-photo {
@@ -67,6 +72,10 @@
 
     .member-affiliation {
         margin-top: 1vw;
+    }
+
+    .col-xl-4 {
+        border-right: .1vw solid rgb(0, 0, 80);
     }
 
 

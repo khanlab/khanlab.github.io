@@ -88,7 +88,7 @@
         <div class="modal-body">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-xl-4 col-md-12 col-sm-12">
+              <div class="col-xl-4 col-md-12 col-sm-12 horizontal-profile">
                 <div class="text-center">
                   <img class="member-photo" src="{{ image }}" />
                   <p class="member-affiliation">
@@ -130,12 +130,15 @@
                     <a
                       href="https://twitter.com/{{ person.twitter }}"
                       target="_blank"
-                      >@{{ person.twitter }}</a
+                      >{% if person.twitter %}@{% endif %}{{ person.twitter
+                      }}</a
                     >
                   </li>
                 </ul>
               </div>
-              <div class="col-xl-8 col-md-12 col-sm-12">{{ person }}</div>
+              <div class="col-xl-8 col-md-12 col-sm-12 profile-blurb">
+                {{ person }}
+              </div>
             </div>
           </div>
         </div>
