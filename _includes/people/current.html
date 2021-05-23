@@ -34,20 +34,21 @@
         {% if person.email %}
         <a href="mailto:{{ person.email }}"><i class="fas fa-envelope"></i> </a>
         {% endif %} {% if person.github %}
-        <a href="https://github.com/{{ person.github }}"
+        <a href="https://github.com/{{ person.github }}" target="_blank"
           ><i class="fab fa-github" aria-hidden="true"></i>
         </a>
         {% endif %} {% if person.orcid %}
-        <a href="https://orcid.org/{{ person.orcid }}"
+        <a href="https://orcid.org/{{ person.orcid }}" target="_blank"
           ><i class="fab fa-orcid" aria-hidden="true"></i>
         </a>
         {% endif %} {% if person.scholar %}
         <a
           href="https://scholar.google.ca/citations?hl=en&user={{ person.scholar }}"
+          target="_blank"
           ><i class="fas fa-graduation-cap" aria-hidden="true"></i>
         </a>
         {% endif %} {% if person.twitter %}
-        <a href="https://twitter.com/{{ person.twitter }}"
+        <a href="https://twitter.com/{{ person.twitter }}" target="_blank"
           ><i class="fab fa-twitter" aria-hidden="true"></i>
         </a>
         {% endif %}
@@ -102,25 +103,33 @@
                   </li>
                   <li>
                     Github:
-                    <a href="https://github.com/{{ person.github }}"
+                    <a
+                      href="https://github.com/{{ person.github }}"
+                      target="_blank"
                       >{{ person.github }}</a
                     >
                   </li>
                   <li>
                     ORCiD:
-                    <a href="https://orcid.org/{{ person.orcid }}"
+                    <a
+                      href="https://orcid.org/{{ person.orcid }}"
+                      target="_blank"
                       >{{ person.orcid }}</a
                     >
                   </li>
                   <li>
                     Google Scholar:
-                    <a href="https://orcid.org/{{ person.orcid }}"
+                    <a
+                      href="https://scholar.google.ca/citations?hl=en&user={{ person.scholar }}"
+                      target="_blank"
                       >{{ person.scholar }}</a
                     >
                   </li>
                   <li>
                     Twitter:
-                    <a href="https://twitter.com/{{ person.twitter }}"
+                    <a
+                      href="https://twitter.com/{{ person.twitter }}"
+                      target="_blank"
                       >@{{ person.twitter }}</a
                     >
                   </li>
