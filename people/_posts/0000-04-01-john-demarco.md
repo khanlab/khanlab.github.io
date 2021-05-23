@@ -2,7 +2,7 @@
 name: John Demarco
 degree:
 position: Master's student
-department: Clinical Anatomy
+affiliation: Clinical Anatomy
 cosupervisor:
 image:
 alumni: true

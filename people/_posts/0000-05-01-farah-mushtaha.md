@@ -2,7 +2,7 @@
 name: Farah Mushtaha
 degree:
 position: Undergraduate student
-department: Medical Science
+affiliation: Medical Science
 cosupervisor: Dr. Corey Baron
 image:
 alumni: false

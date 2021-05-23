@@ -24,7 +24,7 @@
       </button>
       <p class="info">
         {{ person.position }}<br />
-        {{ person.department }}<br />
+        {{ person.affiliation }}<br />
         {% if person.cosupervisor %}
         <em>Co-supervised by {{ person.cosupervisor }}</em>
         {% endif %}
@@ -92,7 +92,7 @@
                   <img class="member-photo" src="{{ image }}" />
                   <p class="member-affiliation">
                     {{ person.position }} <br />
-                    {{ person.department }}
+                    {{ person.affiliation }}
                   </p>
                 </div>
                 <ul class="member-socials">

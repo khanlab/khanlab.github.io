@@ -2,7 +2,7 @@
 name: Brad Karat
 degree:
 position: Master's student
-department: Neuroscience
+affiliation: Neuroscience
 cosupervisor:
 image:
 alumni: false

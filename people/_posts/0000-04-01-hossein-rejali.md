@@ -2,7 +2,7 @@
 name: Hossein Rejali
 degree:
 position: Master's student
-department: Biomedical Engineering
+affiliation: Biomedical Engineering
 cosupervisor:
 image:
 alumni: true
