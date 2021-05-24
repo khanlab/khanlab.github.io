@@ -1,0 +1,26 @@
+{% assign publications = site.data.publications.publications %} {% for post in
+publications limit: 3 %}
+<div class="row paper-item">
+  <div class="d-flex">
+    <div class="flex-grow-1 ms-3">
+      <a
+        href="https://doi.org/{{ post.doi }}"
+        target="_blank"
+        >{{ post.title }}</a
+      >
+      <p class="info">
+        {% assign authors = post.authors | split: "," %} {% assign dates =
+        post.year | append: "-" | append: post.month | append: "-" | append:
+        post.day %} {% if authors | size > 5 %} {{ authors[0] | append: "," |
+        append: authors[1] | append: "," | append: authors[2] | append: "," | replace: "[", ""
+        | replace: "'", "" }}
+        <em>et al.</em>
+        {% else %} {% for author in authors %} {{ author | replace: "[", "" |
+        replace: "'", "" }} {% if author != authors.last %}, {% endif %} {%
+        endfor %} {% endif %} <em>({{ dates | date: "%b %Y" }})</em>
+      </p>
+    </div>
+    <br />
+  </div>
+</div>
+{% endfor %}
