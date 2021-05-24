@@ -1,0 +1,26 @@
+#lab-photo {
+  width: 75vw;
+  height: auto;
+}
+
+.d-flex {
+  padding: 0;
+}
+
+.modal-body img {
+  text-align: center;
+}
+
+.funding {
+  width: auto;
+  height: 5vh;
+}
+
+/* Large screens */
+@media only screen and (min-width: 1024px) {
+  .funding {
+    width: auto;
+    height: 5vw;
+  }
+
+}

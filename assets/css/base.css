@@ -110,7 +110,7 @@ body {
   background-color: rgb(0, 0, 80);
   color: rgb(240, 240, 240);
   text-align: center;
-  font-size: 0.75vh;
+  font-size: 1.25vh;
 }
 
 h2 {
@@ -122,6 +122,34 @@ h2 {
   text-decoration: none;
   text-transform: uppercase;
 }
+
+a {
+  color: rgb(0, 0, 80);
+}
+
+a:hover {
+  color: rgb(0, 0, 80);
+  text-decoration: underline;
+  text-underline-offset: 1vh;
+}
+
+.media-heading {
+  background-color: rgb(240, 240, 240);
+  font-size: 1.25vh;
+  border: none;
+}
+
+.media-heading:hover {
+  text-decoration: underline;
+  text-underline-offset: .25vh;
+}
+
+.info {
+  font-size: 1vh;
+  padding: 0;
+  width: 100%;
+}
+
 
 /* Large screens */
 @media only screen and (min-width: 1024px) {
@@ -150,8 +178,30 @@ h2 {
     font-size: 3vw;
   }
 
+  a:hover {
+    text-underline-offset: .5vw;
+  }
+
+  ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
   .footer {
-    font-size: 0.75vw;
+    font-size: 1vw;
+  }
+
+  .media-heading {
+    font-size: 1.5vw;
+  }
+
+  .media-heading:hover {
+      text-underline-offset: .5vw;
+  }
+
+  .info {
+    font-size: 1vw;
   }
 
   .fas,
@@ -162,7 +212,7 @@ h2 {
   .fas:hover,
   .fab:hover {
     text-decoration: underline;
-    text-underline-offset: .25vw;
+    text-underline-offset: 0.25vw;
   }
 
   .socials {

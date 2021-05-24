@@ -1,37 +1,13 @@
-ul {
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0;
-}
-
-a {
-  color: rgb(0, 0, 80);
-}
-
 #map {
-    margin-top: 2.5vw;
-}
-
-#map iframe {
-    width: 75vw;
-    height: 50vw;
+    width: 80vw;
+    height: 30vw;
 }
 
 /* Large screens */
 @media only screen and (min-width: 1024px) {
-    #info {
-        float: left;
-        width: 40vw;
-    }
-
     #map {
-        float: right;
         width: 40vw;
-    }
-
-    #map iframe {
-        width: 38vw;
-        height: 19vw;
+        height: 20vw;
     }
 
 }

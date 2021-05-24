@@ -1,42 +1,13 @@
-.group {
-    margin-bottom: 2vh;
+.partner-img {
+    width: auto;
+    height: 5vh;
 }
 
-.group p {
-    width: 85%;
-    margin: 0 auto;
-}
-
-.group #grad {
-    display: block;
-    margin: 2.5vw auto 0;
-}
-
-.partners {
-    text-align: center;
-}
-
-.partners img {
-    width: 15vh;
-    margin: 2.5vw;
-}
 
 /* Large screens */
 @media only screen and (min-width: 1024px) {
-    .group {
-        margin-bottom: 2vw;
-    }
-
-    .group p {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .group #grad {
-        margin-top: 1.5vw;
-    }
-
-    .partners img {
-        width: 15vw;
+    .partner-img {
+        width: auto;
+        height: 5vw
     }
 }
