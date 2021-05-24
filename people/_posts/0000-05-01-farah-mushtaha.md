@@ -14,5 +14,6 @@ orcid:
 scholar:
 twitter:
 ---
+### About
 
 I'm an undergraduate student in Medical Biophysics. My project focuses on developing and characterizing 3D printed Axon-mimetic phantoms for Diffusion MRI validation.
