@@ -1,0 +1,5 @@
+Gemfile*
+.jekyll-cache
+_site
+.*venv
+.ipynb_checkpoints
