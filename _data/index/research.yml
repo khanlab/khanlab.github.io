@@ -1,0 +1,19 @@
+- name: Image-guided neurosurgery
+  main_image: 
+  popup_image:
+  long_desc:
+  
+- name: Histology & imaging
+  main_image:
+  popup_image: 
+  long_desc:
+
+- name: Epilepsy
+  main_image:
+  popup_image: 
+  long_desc:
+
+- name: Brain structure
+  main_image:
+  popup_image: 
+  long_desc:

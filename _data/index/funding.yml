@@ -1,0 +1,15 @@
+- name: NSERC
+  image: /assets/images/index/funding/nserc.png
+  link: "#"
+
+- name: CIHR
+  image: /assets/images/index/funding/CIHR.jpg
+  link: "#"
+
+- name: OBI
+  image: /assets/images/index/funding/OBI.jpg
+  link: "#"
+
+- name: Eplink
+  image: /assets/images/index/funding/Eplink.png
+  link: "#"
