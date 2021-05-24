@@ -12,50 +12,62 @@ grad_recruit: true
 {% assign internship = site.data.join.internship %}
 {% assign undergrad = site.data.join.undergrad %}
 
-<div class="group">
+<div class="row">
     <h2>Post-doctoral opportunities</h2>
     <hr>
-
-    {% if page.postdoc_recruit == true %}
+    <div class="row">
+        {% if page.postdoc_recruit == true %}
         {% for position in postdoc %}
             <p><h3>Role: {{ position.role }}</h3>
-               Location: {{ position.location }} <br/>
-               Description: {{ position.description }} <br/>
+            Location: {{ position.location }} <br/>
+            Description: {{ position.description }} <br/>
             </p>
         {% endfor %}
-    {% else %}
+        {% else %}
         <p>Check back here for new announcements</p>
-    {% endif %}
+        {% endif %}
+    </div>
 </div>
+<br/>
 
-<div class="group">
+<div class="row">
     <h2>Graduate opportunities</h2>
     <hr>
-    {% if page.grad_recruit == true %}
+    <div class="row">
+        {% if page.grad_recruit == true %}
         <p>{{ grad.blurb }}</p>
-        <a href="{{ grad.grad-link }}">
-            <img id="grad" alt="{{ grad.grad-alt }}" src="{{ grad.grad-image }}">
-        </a>
-    {% else %}
+        <div class="row text-center">
+            <a href="{{ grad.grad-link }}">
+                <img id="grad" alt="{{ grad.grad-alt }}" src="{{ grad.grad-image }}">
+            </a>
+        </div>
+        {% else %}
         <p>Check back here for new announcements</p>
-    {% endif %}
+        {% endif %}
+    </div>
 </div>
+<br/>
 
-<div class="group">
+<div class="row">
     <h2>Internship opportunities</h2>
     <hr>
     <p>{{ internship.blurb }}</p>
     
-    <div class="partners">
-        {% for partner in internship.partners %}
-            <a href="{{ partner.link }}">
-                <img alt="{{ partner.name }}" src="{{ partner.image }}">
-            </a>
-        {% endfor %}
+    <div class="row text-center">
+        <div class="d-flex">
+            <div class="flex-grow-1 ms-3">
+                {% for partner in internship.partners %}
+                <a href="{{ partner.link }}" target="_blank">
+                    <img class="partner-img" alt="{{ partner.name }}" src="{{ partner.image }}">
+                </a>
+                {% endfor %}
+            </div>
+        </div>
     </div>
 </div>
+<br/>
 
-<div class="group">
+<div class="row">
     <h2>Undergraduate opportunities</h2>
     <hr>
     <p>{{ undergrad.honors }}</p> <br/>
