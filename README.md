@@ -1,6 +1,6 @@
 # khanlab.github.io (khanlab.ca)
 
-The website built using Jekyll and Github pages. Organization of the website is 
+The website was built using Jekyll and Github pages. Organization of the website is 
 structured such that each page's associated data has a corresponding folder (if 
 necessary) under `_data` and _`assets` (for images). The exception to this are
 indivual pages, which are under `people/_posts`. Page templates and common 
@@ -53,6 +53,8 @@ in detail, including a short blurb about the user, if provided.
 ### `news`
 
 Similar to people, `posts` (found under `news/_posts`) are used to create articles. However, the date used here is important as it is used to sort and grab the latest articles.
+
+_News prior to summer of 2021 is unavailable_
 
 ### `publications`
 
