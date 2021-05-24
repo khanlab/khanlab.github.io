@@ -137,6 +137,7 @@ a:hover {
   background-color: rgb(240, 240, 240);
   font-size: 1.25vh;
   border: none;
+  text-decoration: underline;
 }
 
 .media-heading:hover {
