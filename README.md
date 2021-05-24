@@ -56,4 +56,4 @@ Similar to people, `posts` (found under `news/_posts`) are used to create articl
 
 ### `publications`
 
-A Jupyter notebook is used to grab all publications. Github is used to automate this process. This is updated monthly, and is currently set to display the 3 most recent articles.
+A Jupyter notebook is used to grab all publications. Github is used to automate this process. This is updated monthly, and is currently set to display the 3 most recent articles. A full list of publications found is stored in a spreadsheet found in `_data/index/publications/publications.csv`.
