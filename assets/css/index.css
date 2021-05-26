@@ -16,6 +16,21 @@
   height: 5vh;
 }
 
+.research {
+  text-align: center;
+}
+
+.research button {
+  margin-bottom: .5vh;
+}
+
+.research img {
+  width: 80%;
+  height: auto;
+  margin-bottom: 1.5vh;
+}
+
+
 /* Large screens */
 @media only screen and (min-width: 1024px) {
   .funding {
@@ -23,4 +38,11 @@
     height: 5vw;
   }
 
+  .research button {
+    font-size: 95%;
+  }
+
+  .research img {
+    width: 85%;
+  }
 }

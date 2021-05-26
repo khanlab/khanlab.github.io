@@ -1,19 +1,61 @@
-- name: Image-guided neurosurgery
-  main_image: 
-  popup_image:
-  long_desc:
-  
-- name: Histology & imaging
-  main_image:
-  popup_image: 
-  long_desc:
+research: 
+  - name: Image-guided neurosurgery
+    main_image: https://static.wixstatic.com/media/e4137e_6cd6c4eb8dbd49bcaa4d1485727c26c2.png/v1/fill/w_487,h_201,al_c,q_85/e4137e_6cd6c4eb8dbd49bcaa4d1485727c26c2.webp
+    long_desc: "<p>Neurosurgery to treat drug-resistant epilepsy or brain cancer 
+    is very challenging, as the surgeon needs to trade-off completely removing 
+    the disease, with sparing healthy functional tissue. Planning how much of the 
+    brain to treat requires knowledge of the neurological pathways and abnormal 
+    regions, however this can be difficult as the boundaries are not always well 
+    defined. Incorrectly defining the region to treat can carry a great deal of 
+    risk; if too small, the surgery will not be effective, and if too large, 
+    function may be altered negatively. </p>
 
-- name: Epilepsy
-  main_image:
-  popup_image: 
-  long_desc:
+    <p> We are working on computational tools to guide neurosurgeons towards 
+    more optimal resections, biopsies, and electrode implantations by extracting 
+    and exploiting the information present in medical images. </p>"
+    popup: 
+      - image_link:
+        image_description:
 
-- name: Brain structure
-  main_image:
-  popup_image: 
-  long_desc:
+  - name: Histology & imaging
+    main_image: https://static.wixstatic.com/media/e4137e_2c32cefef00940ab9fa6b5bd54cd82d3.png/v1/fill/w_416,h_348,al_c,q_85/e4137e_2c32cefef00940ab9fa6b5bd54cd82d3.webp
+    long_desc: "<p>Histology provides a microscopic view into tissue and, when 
+    possible, is an invaluable way to validate what we are observing with 
+    medical imaging.  We have the opportunity to access tissue obtained from 
+    surgical procedures, however, correcting for the tissue deformations that 
+    occur from resection and histological processing remains a major challenge.</p>
+    
+    <p>We are developing semi-automated pipelines for performing this image 
+    registration in applications that include temporal lobe resections, and 
+    carotid plaque endartarectomies, and are employing these tools to investigate 
+    the correlation between imaging and histological markers. </p>"
+    popup: 
+    - image_link:
+      image_description:
+
+  - name: Epilepsy
+    main_image: https://static.wixstatic.com/media/e4137e_c63abe491d364600852c24e93b9512fd.png/v1/fill/w_574,h_241,al_c,q_85/e4137e_c63abe491d364600852c24e93b9512fd.webp
+    long_desc: "<p> Epilepsy is a debilitating neurological disorder, and many 
+    patients do not have control of seizures with anti-epileptic medications. 
+    In these cases, it becomes imperative to map out where the seizures are 
+    originating from in order to perform focal surgical treatment. </p>
+    
+    <p>We are using advanced imaging techniques, such as quantitative 
+    multi-parametric MRI and ultra-high-field MRI in order to detect lesions 
+    which may be otherwise hidden, and to better understand how the brain and 
+    it’s networks are affected by epilepsy. </p>"
+    popup: 
+    - image_link:
+      image_description:
+
+  - name: Brain structure
+    main_image: https://static.wixstatic.com/media/e4137e_76e60edb2245404988ea2678d67ced1e.png/v1/fill/w_600,h_270,al_c,q_85,usm_0.66_1.00_0.01/e4137e_76e60edb2245404988ea2678d67ced1e.webp
+    long_desc: "<p>Alterations in brain structure can be seen in many neurological 
+    disorders, both at the macro and the micro scale. We have been investigating 
+    sensitive techniques for quantifying brain structure using anatomical MRI 
+    morphometry techniques that are sensitive to the size and shape of the 
+    cortical and subcortical structures, and diffusion MRI to investigate 
+    microstructure.</p>"
+    popup: 
+      - image_link:
+        image_description:
