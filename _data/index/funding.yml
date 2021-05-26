@@ -3,11 +3,11 @@
   link: "#"
 
 - name: CIHR
-  image: /assets/images/index/funding/CIHR.jpg
+  image: /assets/images/index/funding/cihr.png
   link: "#"
 
 - name: OBI
-  image: /assets/images/index/funding/OBI.jpg
+  image: /assets/images/index/funding/obi.png
   link: "#"
 
 - name: Eplink
