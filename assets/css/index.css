@@ -21,7 +21,7 @@
 }
 
 .research button {
-  margin-bottom: .5vh;
+  margin-bottom: 0.5vh;
 }
 
 .research img {
@@ -30,6 +30,10 @@
   margin-bottom: 1.5vh;
 }
 
+.research-popup {
+  text-align: center;
+  font-size: 1.25vh;
+}
 
 /* Large screens */
 @media only screen and (min-width: 1024px) {
@@ -44,5 +48,14 @@
 
   .research img {
     width: 85%;
+  }
+
+  .research-popup {
+    font-size: 1vw;
+  }
+
+  .research-popup img {
+    height: 40%;
+    width: auto;
   }
 }
