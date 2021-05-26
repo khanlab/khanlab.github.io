@@ -16,18 +16,24 @@
   height: 5vh;
 }
 
+.news h3,
+.research h3 {
+  font-size: 1.25vh;
+}
+
+.news img,
+.research img {
+  width: 80%;
+  height: auto;
+  margin-bottom: 1.5vh;
+}
+
 .research {
   text-align: center;
 }
 
 .research button {
   margin-bottom: 0.5vh;
-}
-
-.research img {
-  width: 80%;
-  height: auto;
-  margin-bottom: 1.5vh;
 }
 
 .research-popup {

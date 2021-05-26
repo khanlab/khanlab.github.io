@@ -50,7 +50,14 @@ append: '-' | append: post.title | replace: " ", "-" %}
       </div>
       <div class="modal-body">
         <div class="container-fluid">
-          {{ post }}
+          {% if post.image %}
+          <div class="row justify-content-center news">
+            <img alt="{{ post.image_desc }}" src="{{ post.image }}"/>
+            <h3>{{ post.image_desc }}</h3>
+          </div>
+          <br/>
+          {% endif %}
+          <div>{{ post }}</div>
         </div>
       </div>
     </div>
