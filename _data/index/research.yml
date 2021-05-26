@@ -14,7 +14,8 @@ research:
     more optimal resections, biopsies, and electrode implantations by extracting 
     and exploiting the information present in medical images. </p>"
     popup: 
-      - image_link:
+      - name: 
+        image_link: 
         image_description:
 
   - name: Histology & imaging
