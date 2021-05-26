@@ -134,9 +134,10 @@ a:hover {
   text-underline-offset: 1vh;
 }
 
-.media-heading {
+.media-heading,
+.pub-link {
   background-color: rgb(240, 240, 240);
-  font-size: 1.25vh;
+  font-size: 1.75vh;
   border: none;
   text-decoration: underline;
 }
@@ -147,7 +148,7 @@ a:hover {
 }
 
 .info {
-  font-size: 1vh;
+  font-size: 1.25vh;
   padding: 0;
   width: 100%;
 }
