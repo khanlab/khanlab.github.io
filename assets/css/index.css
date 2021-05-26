@@ -48,12 +48,18 @@
     height: 5vw;
   }
 
-  .research button {
-    font-size: 95%;
-  }
-
+  .news img,
   .research img {
     width: 85%;
+  }
+
+  .news h3,
+  .research h3 {
+    font-size: 1vw;
+  }
+
+  .research button {
+    font-size: 95%;
   }
 
   .research-popup {
@@ -63,5 +69,9 @@
   .research-popup img {
     height: 40%;
     width: auto;
+  }
+
+  .pub-link {
+    font-size: 1.5vw;
   }
 }
