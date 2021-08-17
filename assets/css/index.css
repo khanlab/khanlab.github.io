@@ -18,7 +18,7 @@
 
 .news h3,
 .research h3 {
-  font-size: 1.25vh;
+  font-size: 14px;
 }
 
 .news img,
@@ -38,7 +38,7 @@
 
 .research-popup {
   text-align: center;
-  font-size: 1.25vh;
+  font-size: 14px;
 }
 
 /* Large screens */
@@ -55,7 +55,7 @@
 
   .news h3,
   .research h3 {
-    font-size: 1vw;
+    font-size: 18px;
   }
 
   .research button {
@@ -63,7 +63,7 @@
   }
 
   .research-popup {
-    font-size: 1vw;
+    font-size: 18px;
   }
 
   .research-popup img {
@@ -72,6 +72,6 @@
   }
 
   .pub-link {
-    font-size: 1.5vw;
+    font-size: 18px;
   }
 }
