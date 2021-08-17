@@ -14,10 +14,10 @@ publications limit: 3 %}
         post.year | append: "-" | append: post.month | append: "-" | append:
         post.day %} {% if authors | size > 5 %} {{ authors[0] | append: "," |
         append: authors[1] | append: "," | append: authors[2] | append: "," | replace: "[", ""
-        | replace: "'", "" }}
+        | replace: "'", "" | replace: "]", "" }}
         <em>et al.</em>
         {% else %} {% for author in authors %} {{ author | replace: "[", "" |
-        replace: "'", "" }} {% if author != authors.last %}, {% endif %} {%
+        replace: "'", "" | replace: "]", "" }} {% if author != authors.last %}, {% endif %} {%
         endfor %} {% endif %} <em>({{ dates | date: "%b %Y" }})</em>
       </p>
     </div>
