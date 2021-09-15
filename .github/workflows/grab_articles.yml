@@ -48,6 +48,6 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit_message: [Actions bot] Update publications
-          title: "[MAINT] Update publications spreadsheet"
+          title: [MAINT] Update publications spreadsheet
           base: master
           branch: update_publications
