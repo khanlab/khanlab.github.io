@@ -3,7 +3,7 @@
 The website was built using Jekyll and Github pages. Organization of the website is 
 structured such that each page's associated data has a corresponding folder (if 
 necessary) under `_data` and _`assets` (for images). The exception to this are
-indivual pages, which are under `people/_posts`. Page templates and common 
+individual pages, which are under `people/_posts`. Page templates and common 
 elements are stored in `_layouts` and `_includes` respectively.
 
 _A Jupyter notebook with a Github Actions cron job will be utilized to update 
