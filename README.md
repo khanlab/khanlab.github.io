@@ -15,7 +15,11 @@ The design of the website and use of Jekyll was inspired by
 ## Updating website
 
 See below for instructions on modifying each page. To modify or update a page, 
-please make the necessary changes make a pull request to the repository!
+please make the necessary changes make a pull request to the repository! 
+
+Currently, the only way to preview these changes prior to publishing is on your 
+local machine by following the instructions on the 
+[following page](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll).
 
 ### `join`
 
