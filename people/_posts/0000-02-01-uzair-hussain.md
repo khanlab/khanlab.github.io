@@ -5,7 +5,7 @@ position: Postdoctoral fellow
 affiliation: Robarts Research Insititute
 cosupervisor: Dr. Corey Baron
 image:
-alumni: false
+alumni: true
 
 # social
 email:
