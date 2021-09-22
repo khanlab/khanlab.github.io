@@ -48,9 +48,12 @@
     height: 5vw;
   }
 
-  .news img,
   .research img {
     width: 85%;
+  }
+
+  .news img {
+    width: 25%;
   }
 
   .news h3,
