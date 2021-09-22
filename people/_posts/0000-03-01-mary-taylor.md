@@ -8,7 +8,7 @@ image:
 alumni: false
 
 # social
-email: 
+email: mtayl84@uwo.ca
 github: 
 orcid: 
 scholar: 
