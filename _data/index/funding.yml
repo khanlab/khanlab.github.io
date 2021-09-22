@@ -1,15 +1,18 @@
-- name: NSERC
+- name: Natural Sciences and Engineering Research Council
   image: /assets/images/index/funding/nserc.png
-  link: "#"
+  link: "https://www.nserc-crsng.gc.ca"
 
-- name: CIHR
+- name: Canada Research Chairs
+  link: "https://www.chairs-chaires.gc.ca"
+
+- name: Canadian Institutes of Health Research
   image: /assets/images/index/funding/cihr.png
-  link: "#"
+  link: "https://cihr-irsc.gc.ca"
 
-- name: OBI
+- name: Ontario Brain Institute
   image: /assets/images/index/funding/obi.png
-  link: "#"
+  link: "https://braininstitute.ca/"
 
-- name: Eplink
+- name: "EpLink - The Ontario Brain Institute Epilepsy Program"
   image: /assets/images/index/funding/Eplink.png
-  link: "#"
+  link: "https://eplink.ca/"
