@@ -1,0 +1,3 @@
+biopython==1.78
+jupyter==1.0.0
+pandas==1.2.4

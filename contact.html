@@ -1,0 +1,45 @@
+---
+layout: base
+style: /assets/css/contact.css
+permalink: /contact/
+title: "CONTACT |"
+---
+<!-- Grab data from file -->
+{% assign contact = site.data.contact.info %}
+
+<div class="row">
+    <h2>Contact</h2>
+    <hr>
+</div>
+
+<div class="row">
+    <div class="col-lg-6">
+        <p>
+            <strong>{{ contact.name }}</strong><br/>
+            {{ contact.title }}
+            <ul>
+                {% for affiliation in contact.affiliations %}
+                <li> 
+                    {% if affiliation.role %}
+                        {{ affiliation.role }},
+                    {% endif %}
+                    {{ affiliation.name }}
+                </li>
+                {% endfor %}
+            </ul>
+        </p>
+
+        <p>
+        {{ contact.location }}
+        </p>
+
+        <p>
+            Tel: {{ contact.phone }}<br/>
+            Email: <a href="mailto: {{ contact.email }}">{{ contact.email }}</a><br/>
+        </p>
+    </div>
+
+    <div class="col-lg-6 text-center">
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2917.4063518223184!2d-81.27560678405051!3d43.011833401682445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882eee16963e9205%3A0x4a3aba64d1a0e59f!2sRobarts%20Research%20Institute!5e0!3m2!1sen!2sca!4v1621534829555!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+.partner-img {
+    width: auto;
+    height: 5vh;
+}
+
+
+/* Large screens */
+@media only screen and (min-width: 1024px) {
+    .partner-img {
+        width: auto;
+        height: 5vw
+    }
+}

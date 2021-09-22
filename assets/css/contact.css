@@ -1,0 +1,13 @@
+#map {
+    width: 80vw;
+    height: 30vw;
+}
+
+/* Large screens */
+@media only screen and (min-width: 1024px) {
+    #map {
+        width: 40vw;
+        height: 20vw;
+    }
+
+}

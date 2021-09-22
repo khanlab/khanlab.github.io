@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <img
+      src="/assets/images/khanlab_logo.png"
+      alt="Khan Computational Imaging Lab"
+      class="nav-brand"
+    />
+
+    <!-- Button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarToggler"
+      aria-controls="navbarToggler"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <div class="animated-icon">
+        <span></span><span></span><span></span><span></span>
+      </div>
+    </button>
+
+    <!-- Collapsible content-->
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-align-end">
+        {% for item in site.data.navigation %}
+        <li class="nav-item">
+          <a href="{{ item.link }}" class="nav-link">{{ item.name }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>

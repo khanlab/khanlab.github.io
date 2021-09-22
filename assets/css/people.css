@@ -1,0 +1,56 @@
+.media {
+    width: 100%;
+}
+
+.member-photo {
+    width: 7.5vh;
+    border-radius: 25vw;
+    outline: rgb(0, 0, 80);
+    outline-style: solid;
+    outline-width: .25vh;
+}
+
+.socials {
+    display: None;
+    
+}
+
+.member-socials {
+    list-style: None;
+    padding-left: 0;
+}
+
+.horizontal-profile {
+    border-bottom: .1vh solid rgb(0, 0, 80);
+    margin-bottom: 1vh;
+}
+
+/* Large screens */
+@media only screen and (min-width: 1024px) {
+    .member-photo {
+        width: 10vw;
+    }
+
+    .socials {
+        display: initial;
+    }
+
+    .socials a {
+        margin-right: .25vw;
+        text-decoration: none;
+    }
+
+    .member-affiliation {
+        margin-top: 1vw;
+    }
+
+    .col-xl-4 {
+        border-right: .1vw solid rgb(0, 0, 80);
+    }
+
+    .horizontal-profile {
+        border-bottom: none;
+    }
+
+
+}

@@ -1,0 +1,73 @@
+{% assign research = site.data.index.research.research %}
+<div class="row justify-content-center">
+  {% for field in research %}
+  <div class="col-lg-3 col-sm-12 research">
+    {% assign field-id = field.name | split: " " | first %}
+    <button
+      type="button"
+      class="media-heading"
+      data-bs-toggle="modal"
+      data-bs-target="#{{ field-id }}"
+    >
+      {{ field.name }}
+    </button>
+    <br />
+    <img src="{{ field.main_image }}" alt="{{ field.name }}" />
+  </div>
+
+  <!-- News article popup (modal) -->
+  <div
+    class="modal fade"
+    id="{{ field-id }}"
+    tabindex="-1"
+    aria-labelledby="profile-modal-label"
+    aria-hidden="true"
+  >
+    <div
+      class="
+        modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl
+      "
+    >
+      <!-- Modal Header -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <h2>{{ field.name }}</h2>
+          </div>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            {{ field.long_desc }} <br/>
+            <div class="row justify-content-center">
+              {% for image in field.popup %}
+              {% if image.image_link %}
+              <div class="col research-popup">
+                <img alt="{{ image.name }}" src="{{ image.image_link }}"/>
+                <h3>{{ image.name }}</h3>
+                <hr>
+                {{ image.image_description }}
+              </div>
+              {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% endfor %}
+  <p>
+    Our multi-disciplinary research spans across several domains, with the
+    commonality being the need to develop novel computational image processing
+    and analysis tools.
+    <strong>Please click on the headings to learn more.</strong>
+  </p>
+  <br />
+</div>

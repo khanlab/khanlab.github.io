@@ -1,0 +1,17 @@
+---
+layout: base
+permalink: /people/
+title: "PEOPLE | "
+style: /assets/css/people.css
+---
+{% assign current = "" | split: "" %} {% assign alumni = "" | split: "" %} {%
+for person in site.categories.people reversed %} {% if person.alumni == true %}
+{% assign alumni = alumni | push: person %} {% else %} {% assign current =
+current | push: person %} {% endif %} {% endfor %}
+
+<p>To view a person's profile, click on their name.</p>
+
+{% include people/current.html %}
+
+<br/>
+{% include people/alumni.html %}
