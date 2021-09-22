@@ -46,8 +46,8 @@
 @media only screen and (min-width: 1024px) {
   .funding {
     width: auto;
-    height: 5vw;
-    margin: 0;
+    height: 75px;
+    margin: 10px;
   }
 
   .research img {
