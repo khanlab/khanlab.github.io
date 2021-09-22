@@ -19,13 +19,6 @@ body {
   min-height: 100vh;
 }
 
-.modal-container { 
-  margin-top: 1.5vh;
-  margin-bottom: 1.5vh;
-  width: 100%;
-  min-height: 100%;
-}
-
 .nav-brand {
   width: 35vw;
   margin-left: 2.5vw;
