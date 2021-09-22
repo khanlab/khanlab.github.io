@@ -47,6 +47,7 @@
   .funding {
     width: auto;
     height: 5vw;
+    margin: 0;
   }
 
   .research img {
