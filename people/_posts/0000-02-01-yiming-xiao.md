@@ -13,6 +13,9 @@ github:
 orcid:
 scholar:
 twitter:
+
+# page settings:
+layout: post
 ---
 ### About
 

@@ -13,6 +13,9 @@ github: github_user
 orcid: orcid_user
 scholar: google-scholar-id
 twitter: username
+
+# page settings:
+layout: post
 ---
 
 [This is part is in markdown format]
