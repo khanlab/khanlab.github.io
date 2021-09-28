@@ -4,15 +4,15 @@ degree:
 position: Master's student
 affiliation: Neuroscience
 cosupervisor:
-image:
+image: /assets/images/people/bradley-karat.jpg
 alumni: false
 
 # social
-email:
-github:
+email: bkarat@uwo.ca
+github: Bradley-Karat
 orcid:
 scholar:
-twitter:
+twitter: @bradleykarat
 
 # page settings:
 layout: post
