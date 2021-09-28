@@ -12,7 +12,7 @@ email: bkarat@uwo.ca
 github: Bradley-Karat
 orcid:
 scholar:
-twitter: @bradleykarat
+twitter: bradleykarat
 
 # page settings:
 layout: post
