@@ -4,7 +4,7 @@ degree: MS
 position: PhD student
 affiliation: Neuroscience
 cosupervisor: Dr. Taylor Schmitz
-image: 
+image: /assets/images/people/sudesna-chakraborty.jpg
 alumni: false
 
 # social
