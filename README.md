@@ -19,8 +19,8 @@ please make the necessary changes make a pull request to the repository!
 
 Netlify has been enabled to preview pages from pull requests. After making a pull request,
 the Netlify bot will comment (after a short time) with a preview link! This link will look 
-something like: `https://deploy-preview-##--khanlab.netlify.app/` (where `##` is associated with
-the pull request number). _(This may not preview correctly if the repository is forked)_
+something like: `https://deploy-preview-##--<site>.netlify.app/` (where `##` is associated with
+the pull request number).
 
 To preview these changes on your local machine prior to publishing, follow the instructions on the 
 [following page](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll).
