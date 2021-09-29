@@ -17,8 +17,12 @@ The design of the website and use of Jekyll was inspired by
 See below for instructions on modifying each page. To modify or update a page, 
 please make the necessary changes make a pull request to the repository! 
 
-Currently, the only way to preview these changes prior to publishing is on your 
-local machine by following the instructions on the 
+Netlify has been enabled to preview pages from pull requests. After making a pull request,
+the Netlify bot will comment (after a short time) with a preview link! This link will look 
+something like: `https://deploy-preview-##--khanlab.netlify.app/` (where `##` is associated with
+the pull request number). _(This may not preview correctly if the repository is forked)_
+
+To preview these changes on your local machine prior to publishing, follow the instructions on the 
 [following page](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll).
 
 ### `join`
@@ -57,8 +61,6 @@ in detail, including a short blurb about the user, if provided.
 ### `news`
 
 Similar to people, `posts` (found under `news/_posts`) are used to create articles. However, the date used here is important as it is used to sort and grab the latest articles.
-
-_News prior to summer of 2021 is unavailable_
 
 ### `publications`
 
