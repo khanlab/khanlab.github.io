@@ -12,7 +12,7 @@ email: dhemacha@uwo.ca
 github: dimuthuhemachandra
 orcid: 
 scholar: 
-twitter: @dimuthuH
+twitter: dimuthuH
 
 # page settings:
 layout: post
