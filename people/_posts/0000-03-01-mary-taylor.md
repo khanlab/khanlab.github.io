@@ -4,7 +4,7 @@ degree:
 position: Master's student
 affiliation: Neuroscience
 cosupervisor: Dr. Maryam Nouri
-image: /assets/images/mary-taylor.jpg
+image: /assets/images/mary-taylor.JPG
 alumni: false
 
 # social
