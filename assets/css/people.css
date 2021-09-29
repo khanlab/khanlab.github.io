@@ -4,6 +4,7 @@
 
 .member-photo {
     width: 7.5vh;
+    height: 7.5vh;
     border-radius: 25vw;
     outline: rgb(0, 0, 80);
     outline-style: solid;
@@ -29,6 +30,7 @@
 @media only screen and (min-width: 1024px) {
     .member-photo {
         width: 10vw;
+        height: 10vw;
     }
 
     .socials {
