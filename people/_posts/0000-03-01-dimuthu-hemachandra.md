@@ -4,7 +4,7 @@ degree:
 position: PhD student
 affiliation: Biomedical Engineering
 cosupervisor: Dr. Penny MacDonald
-image: 
+image: /assets/images/people/dimuthu-hemachandra.jpg
 alumni: false
 
 # social
