@@ -102,7 +102,7 @@ body {
 .nav-link:hover {
   text-decoration: underline;
   text-decoration-thickness: 0.25vw;
-  text-underline-offset: 1.5vw;
+  text-underline-offset: 4px;
 }
 
 .footer {
@@ -131,7 +131,7 @@ a {
 a:hover {
   color: rgb(0, 0, 80);
   text-decoration: underline;
-  text-underline-offset: 1vh;
+  text-underline-offset: 4px;
 }
 
 .media-heading,
@@ -144,7 +144,7 @@ a:hover {
 
 .media-heading:hover {
   text-decoration: underline;
-  text-underline-offset: .25vh;
+  text-underline-offset: 4px;
 }
 
 .info {
@@ -174,7 +174,7 @@ a:hover {
   }
 
   .nav-link:hover {
-    text-underline-offset: 1vw;
+    text-underline-offset: 8px;
   }
 
   h2 {
@@ -182,7 +182,7 @@ a:hover {
   }
 
   a:hover {
-    text-underline-offset: .5vw;
+    text-underline-offset: 4px;
   }
 
   ul {
@@ -200,7 +200,7 @@ a:hover {
   }
 
   .media-heading:hover {
-      text-underline-offset: .5vw;
+      text-underline-offset: 4px;
   }
 
   .info {
@@ -215,7 +215,7 @@ a:hover {
   .fas:hover,
   .fab:hover {
     text-decoration: underline;
-    text-underline-offset: 0.25vw;
+    text-underline-offset: 4px;
   }
 
   .socials {

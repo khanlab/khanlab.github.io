@@ -1,6 +1,6 @@
 ---
 name: Jonathan Lau
-degree: 
+degree: MD
 position: PhD student
 affiliation: Biomedical Engineering
 cosupervisor: Dr. Terry Peters
