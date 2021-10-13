@@ -4,10 +4,13 @@
 <table class="table">
   {% tablerow person in alumni cols:2 %}
   <!-- Set person image -->
-  {% if person.image %} {% capture img_exists %}{% file_exists {{ person.image
+  <!-- {% if person.image %} {% capture img_exists %}{% file_exists {{ person.image
   }} %}{% endcapture %} {% if img_exists == "true" %} {% assign image =
   person.image %} {% else %} {% assign image =
   "/assets/images/people/placeholder.png" %} {% endif %} {% else %} {% assign
+  image = "/assets/images/people/placeholder.png" %} {% endif %} {% assign
+  person-id = person.name | replace: " ", "-" %} -->
+  {% if person.image %} {% assign image = person.image %} {% else %} {% assign
   image = "/assets/images/people/placeholder.png" %} {% endif %} {% assign
   person-id = person.name | replace: " ", "-" %}
 
