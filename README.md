@@ -19,7 +19,7 @@ please make the necessary changes make a pull request to the repository!
 
 Netlify has been enabled to preview pages from pull requests. After making a pull request,
 the Netlify bot will comment (after a short time) with a preview link! This link will look 
-something like: `https://deploy-preview-##--<site>.netlify.app/` (where `##` is associated with
+something like: `https://deploy-preview-##--khanlab.github.io.netlify.app/` (where `##` is associated with
 the pull request number).
 
 To preview these changes on your local machine prior to publishing, follow the instructions on the 
@@ -58,10 +58,17 @@ A template has been drawn up and can be found in the `people/_drafts` directory.
 By clicking on each user's profile picture, a window will pop up with information 
 in detail, including a short blurb about the user, if provided.
 
+If you include an image and it does not show up on the website, please check to see if an
+image has been uploaded or if the path is correct!
+
 ### `news`
 
-Similar to people, `posts` (found under `news/_posts`) are used to create articles. However, the date used here is important as it is used to sort and grab the latest articles.
+Similar to people, `posts` (found under `news/_posts`) are used to create articles. 
+However, the date used here is important as it is used to sort and grab the latest articles.
 
 ### `publications`
 
-A Jupyter notebook is used to grab all publications. Github is used to automate this process. This is updated monthly, and is currently set to display the 3 most recent articles. A full list of publications found is stored in a spreadsheet found in `_data/index/publications/publications.csv`.
+A Jupyter notebook is used to grab all publications. Github is used to automate this process. 
+This is updated monthly, and is currently set to display the 3 most recent articles. 
+A full list of publications found is stored in a spreadsheet found 
+in `_data/index/publications/publications.csv`.
