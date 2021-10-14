@@ -4,9 +4,9 @@
 <table class="table">
   {% tablerow person in current cols:2 %}
   <!-- Set person image -->
-  {% if person.image %} {% assign image = person.image %} {% else %} {% assign
-    image = "/assets/images/people/placeholder.png" %} {% endif %} {% assign
-    person-id = person.name | replace: " ", "-" %}
+  {% assign image = "/assets/images/people/placeholder.png" %} {% for
+  static_file in site.static_files %} {% if person.image == static_file.path %}
+  {% assign image = person.image %} {% endif %} {% endfor %}
 
   <!-- Person's mini profile -->
   <div class="d-flex">
