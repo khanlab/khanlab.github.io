@@ -43,11 +43,39 @@ jobs:
         run: |
           papermill ${{ github.workspace }}/get_publications.ipynb ${{ github.workspace }}/get_publications.ipynb
 
+      - name: New article condition
+        id: article-condition
+        run: |
+          if grep -q "0 new articles found." ${{ github.workspace }}/get_publications.ipynb; then
+            echo "::set-output name=hit::false"
+          else
+            echo "::set-output name=hit::true"
+          fi
+
+      # Creates a PR for review if new article(s) found
       - name: Create pull request
         uses: peter-evans/create-pull-request@v3
+        if: steps.article-condition.outputs.hit == true
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: Update publications by Actions bot
           title: '[MAINT] Update publications spreadsheet'
           base: master
           branch: update_publications
+
+      # Directly commits to master if no new articles found
+      - name: Commit publications file
+        id: commit-pub
+        if: steps.article-condition.outputs.hit != true
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -m "Update publications spreadsheet" -a
+          echo "::set-output name=run::true"
+
+      - name: Push to master
+        uses: ad-m/github-push-action@master
+        if: steps.commit-pub.outputs.run == true
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
