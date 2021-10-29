@@ -13,6 +13,7 @@ jobs:
     strategy:
       matrix:
         python-version: [3.8]
+        poetry-version: [1.2.0a2]
 
     steps:
       - name: Checkout master branch
@@ -23,25 +24,28 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
+      - name: Setup Poetry ${{ matrix.poetry-version }}
+        uses: Gr1N/setup-poetry@v7
+        with: 
+          poetry-version: ${{ matrix.poetry-version }}
+
       - name: Check cache
         uses: actions/cache@v2
         id: cache
         with:
-          path: ${{ env.pythonLocation }}
-          key: ${{ env.pythonLocation }}-${{ hashFiles('requirements.txt') }}
+          path: ~/.cache/pypoetry/virtualenvs
+          key: ${{ runner.os }}-poetry-${{ hashFiles('poetry.lock') }}
           restore-keys: |
-            ${{ env.pythonLocation }}-
+            ${{ runner.os }}-poetry-
 
       - name: Install requirements
         if: steps.cache.outputs.cache-hit != true
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt 
-          pip install papermill~=2.3
+          poetry install --with actions
 
       - name: Run notebook
         run: |
-          papermill ${{ github.workspace }}/get_publications.ipynb ${{ github.workspace }}/get_publications.ipynb
+          poetry run papermill ${{ github.workspace }}/get_publications.ipynb ${{ github.workspace }}/get_publications.ipynb
 
       - name: New article condition
         id: article-condition
