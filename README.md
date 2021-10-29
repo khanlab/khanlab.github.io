@@ -6,11 +6,15 @@ necessary) under `_data` and _`assets` (for images). The exception to this are
 individual pages, which are under `people/_posts`. Page templates and common 
 elements are stored in `_layouts` and `_includes` respectively.
 
-_A Jupyter notebook with a Github Actions cron job will be utilized to update 
+_A Jupyter notebook with a Github Actions cron job is utilized to update 
 recent publications on a monthly basis._
 
 The design of the website and use of Jekyll was inspired by 
 [nbclab.github.io](https://github.com/NBCLab/nbclab.github.io).
+
+All required packages are managed via [Poetry (v1.2.0a2)](https://python-poetry.org/). 
+Click on the package link to see setup instructions.
+_This is only required to run the Jupyter notebook._
 
 ## Updating website
 
