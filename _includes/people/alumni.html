@@ -5,8 +5,9 @@
   {% tablerow person in alumni cols:2 %}
   <!-- Set person image -->
   {% assign image = "/assets/images/people/placeholder.png" %} {% for
-    static_file in site.static_files %} {% if person.image == static_file.path %}
-    {% assign image = person.image %} {% endif %} {% endfor %}
+  static_file in site.static_files %} {% if person.image == static_file.path %}
+  {% assign image = person.image %} {% endif %} {% endfor %}
+  {% assign person-id = person.name | replace: " ", "-" %}
     
   <!-- Person's mini profile -->
   <div class="d-flex">
