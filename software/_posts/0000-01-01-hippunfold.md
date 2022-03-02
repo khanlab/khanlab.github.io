@@ -1,6 +1,9 @@
 ---
 # Fields can be left blank! 
 name: Hippunfold
+authors: 
+  - Jordan DeKraker
+  - Ali Khan
 short_description: Automatically model the topological folding structure of the human hippocampus, and computationally unfold the hippocampus to segment subfields and generate hippocampal and dentate gyrus surfaces.
 image: 
 github: https://github.com/khanlab/hippunfold
