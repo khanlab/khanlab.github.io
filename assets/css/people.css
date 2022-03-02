@@ -11,6 +11,10 @@
     outline-width: .25vh;
 }
 
+.modal-header .col-sm-7 {
+    margin-left: 2vw;
+}
+
 .socials {
     display: None;
     
