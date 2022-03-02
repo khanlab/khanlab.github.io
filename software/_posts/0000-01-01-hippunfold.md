@@ -1,7 +1,7 @@
 ---
 # Fields can be left blank! 
 name: Hippunfold
-short_description: Automated unfolding of the hippocampus
+short_description: Automatically model the topological folding structure of the human hippocampus, and computationally unfold the hippocampus to segment subfields and generate hippocampal and dentate gyrus surfaces.
 image: 
 github: https://github.com/khanlab/hippunfold
 
@@ -13,7 +13,7 @@ This tool aims to automatically model the topological folding structure of the h
 
 The overall workflow can be summarized in the following steps:
 
-![](https://raw.githubusercontent.com/khanlab/hippunfold/master/docs/images/hippunfold_overview.jpg)
+![](https://raw.githubusercontent.com/khanlab/hippunfold/master/docs/images/hippunfold_overview.jpg){: width="100%" }
 
 1. Pre-processing MRI images including non-uniformity correction, resampling to 0.3mm isotropic subvolumes, registration and cropping to coronal-oblique subvolumes around each hippocampus
 
