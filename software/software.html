@@ -4,14 +4,87 @@ permalink: /software/
 title: "SOFTWARE | "
 style: /assets/css/people.css
 ---
-{% assign current = "" | split: "" %} {% assign alumni = "" | split: "" %} {%
-for person in site.categories.people reversed %} {% if person.alumni == true %}
-{% assign alumni = alumni | push: person %} {% else %} {% assign current =
-current | push: person %} {% endif %} {% endfor %}
 
-<p>To view a person's profile, click on their name.</p>
+{% assign current = "" | split: "" %} {% for software in
+site.categories.software reversed %} {% assign current = current | push:
+software %} {% endfor %}
 
-{% include people/current.html %}
+<p>
+  To learn more about the software developed in our lab, click on the its name.
+</p>
 
-<br/>
-{% include people/alumni.html %}
+<!-- Software -->
+<h2>Tools & Packages</h2>
+<hr />
+<table class="table">
+  {% tablerow pkg in current cols:1 %}
+  <!-- Set software image (UPDATE PLACEHOLDER) -->
+  {% assign image = "/assets/images/people/placeholder.png" %} {% for
+  static_file in site.static_files %} {% if pkg.image == static_file.path %} {%
+  assign image = pkg.image %} {% endif %} {% endfor %} {% assign pkg-id =
+  pkg.name | replace: " ", "-" %}
+
+  <!-- Person's mini profile -->
+  <div class="d-flex">
+    <div class="flex-shrink-0">
+      <img class="member-photo" src="{{ image }}" />
+    </div>
+    <div class="flex-grow-1 ms-3">
+      <button
+        type="button"
+        class="media-heading"
+        data-bs-toggle="modal"
+        data-bs-target="#{{ pkg-id }}"
+      >
+        {{ pkg.name }}
+      </button>
+      <p class="info"><br />{{ pkg.short_description }}</p>
+    </div>
+  </div>
+
+  <!-- Profile popup (modal) -->
+  <div
+    class="modal fade"
+    id="{{ pkg-id }}"
+    tabindex="-1"
+    aria-labelledby="profile-modal-label"
+    aria-hidden="true"
+  >
+    <div
+      class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
+    >
+      <!-- Modal Header-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="col-xl-3 col-md-3 col-sm-3">
+            <div class="text-center">
+              <img class="member-photo" src="{{ image }}" />
+            </div>
+          </div>
+          <div class="col-xl-7 col-md-7 col-sm-7">
+            <h2 id="profile-modal-label">{{ pkg.name }}</h2>
+            <p><a href="{{ pkg.github }}">{{ pkg.github }} </a></p>
+          </div>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xl-12 col-md-12 col-sm-12 profile-blurb">
+                {{ pkg }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endtablerow %}
+</table>
