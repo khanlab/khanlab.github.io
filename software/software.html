@@ -18,8 +18,8 @@ software %} {% endfor %}
 <hr />
 <table class="table">
   {% tablerow pkg in current cols:1 %}
-  <!-- Set software image (UPDATE PLACEHOLDER) -->
-  {% assign image = "/assets/images/people/placeholder.png" %} {% for
+  <!-- Set software image -->
+  {% assign image = "/assets/images/software/placeholder.png" %} {% for
   static_file in site.static_files %} {% if pkg.image == static_file.path %} {%
   assign image = pkg.image %} {% endif %} {% endfor %} {% assign pkg-id =
   pkg.name | replace: " ", "-" %}
@@ -64,6 +64,12 @@ software %} {% endfor %}
           <div class="col-xl-7 col-md-7 col-sm-7">
             <h2 id="profile-modal-label">{{ pkg.name }}</h2>
             <p><a href="{{ pkg.github }}">{{ pkg.github }} </a></p>
+            <p>
+              <em
+                >Developed by: {% for author in pkg.authors %} {{ author }}{% if
+                author != pkg.authors.last %}, {% endif %} {% endfor %}</em
+              >
+            </p>
           </div>
           <button
             type="button"
