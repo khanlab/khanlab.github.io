@@ -5,8 +5,19 @@ authors:
   - Jordan DeKraker
   - Ali Khan
 short_description: Automatically model the topological folding structure of the human hippocampus, and computationally unfold the hippocampus to segment subfields and generate hippocampal and dentate gyrus surfaces.
-image: 
-github: https://github.com/khanlab/hippunfold
+image:
+badges:
+  - name: documentation
+    icon: https://readthedocs.org/projects/hippunfold/badge/?version=latest
+    url: https://hippunfold.readthedocs.io
+
+  - name: version
+    icon: https://img.shields.io/github/v/tag/khanlab/hippunfold?label=version
+    url: https://github.com/khanlab/hippunfold
+  
+  - name: docker
+    icon: https://img.shields.io/docker/pulls/khanlab/hippunfold
+    url: https://hub.docker.com/r/khanlab/hippunfold
 
 # page settings:
 layout: post

@@ -63,7 +63,13 @@ software %} {% endfor %}
           </div>
           <div class="col-xl-7 col-md-7 col-sm-7">
             <h2 id="profile-modal-label">{{ pkg.name }}</h2>
-            <p><a href="{{ pkg.github }}">{{ pkg.github }} </a></p>
+            <p>
+              {% for badge in pkg.badges %}
+              <a href="{{ badge.url }}" target="_blank"
+                ><img src="{{ badge.icon }}" alt="{{ badge.name }}"
+              /></a>
+              {% endfor %}
+            </p>
             <p>
               <em
                 >Developed by: {% for author in pkg.authors %} {{ author }}{% if
