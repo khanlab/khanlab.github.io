@@ -14,6 +14,10 @@ badges:
   - name: version
     icon: https://img.shields.io/github/v/tag/khanlab/hippunfold?label=version
     url: https://github.com/khanlab/hippunfold
+
+  - name: zenodo
+    icon: https://zenodo.org/badge/282100834.svg
+    url: https://zenodo.org/badge/latestdoi/282100834
   
   - name: docker
     icon: https://img.shields.io/docker/pulls/khanlab/hippunfold
