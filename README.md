@@ -70,6 +70,10 @@ image has been uploaded or if the path is correct!
 Similar to people, `posts` (found under `news/_posts`) are used to create articles. 
 However, the date used here is important as it is used to sort and grab the latest articles.
 
+### `software`
+Similar to people, `posts` (found under `software/_posts`) are used to create and update the table of developed software.
+As before, these are sorted by date and is not currently relevant for this page.
+
 ### `publications`
 
 A Jupyter notebook is used to grab all publications. Github is used to automate this process. 
