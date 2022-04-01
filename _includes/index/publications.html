@@ -14,7 +14,7 @@ publications limit: 3 %}
         replace: "[", "" | replace: "'", "" | replace: "]", "" }}
         <em>et al.</em>
         {% else %} {% for author in authors %} {{ author | replace: "[", "" |
-        replace: "'", "" | replace: "]", "" }} {% if author != authors.last %},
+        replace: "'", "" | replace: "]", "" }}{% if author != authors.last %},
         {% endif %} {% endfor %} {% endif %}
         <em>({{ dates | date: "%b %Y" }})</em>
       </p>
