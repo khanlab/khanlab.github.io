@@ -12,7 +12,7 @@ publications limit: 3 %}
       <p class="info">
         {% assign authors = post.authors | split: "," %} {% assign dates =
         post.year | append: "-" | append: post.month | append: "-" | append:
-        post.day %} {% if authors | size > 5 %} {{ authors[0] | append: "," |
+        post.day %} {% if authors.size > 5 %} {{ authors[0] | append: "," |
         append: authors[1] | append: "," | append: authors[2] | append: "," | replace: "[", ""
         | replace: "'", "" | replace: "]", "" }}
         <em>et al.</em>
