@@ -64,6 +64,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: Update publications by Actions bot
           title: '[MAINT] Update publications spreadsheet'
+          body: 'New publications found - please check before merging' 
           base: master
           branch: update_publications
 
