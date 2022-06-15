@@ -5,33 +5,53 @@ permalink: /pubs/
 title: "PUBS |"
 ---
 
-{% assign publications = site.data.publications.publications %} {% for post in
-publications limit: 50 %}
-<div class="row paper-item">
-  <div class="d-flex">
-    <div class="flex-grow-1 ms-3">
-      <a
-        class="pub-link"
-        href="https://doi.org/{{ post.doi }}"
-        target="_blank"
-        >{{ post.title }}</a
-      >
-      <p class="info">
-        {% assign authors = post.authors | split: "," %} {% assign dates =
-        post.year | append: "-" | append: post.month | append: "-" | append:
-        post.day %} {% if authors.size > 5 %} {{ authors[0] | append: "," |
-        append: authors[1] | append: "," | append: authors[2] | append: "," | replace: "[", ""
-        | replace: "'", "" | replace: "]", "" }}
-        <em>et al.</em>
-        {% else %} {% for author in authors %} {{ author | replace: "[", "" |
-        replace: "'", "" | replace: "]", "" }} {% if author != authors.last %}, {% endif %} {%
-        endfor %} {% endif %} <em>({{ dates | date: "%b %Y" }})</em>
-      </p>
-    </div>
-    <br />
-  </div>
-</div>
+<!-- Get variables -->
+{% assign publications = site.data.publications.publications %} 
+{% assign years = "" | split: "" %}
+{% for post in publications %}
+  {% assign years = years | push: post.year %}
 {% endfor %}
+{% assign years = years | uniq | reversed %}
 
+{% for year in years %}
+  <!-- Year headings  -->
+  <div class="row text-center">
+    <h2>{{ year }}</h2>
+  </div>
 
+  <!-- Publications by year -->
+  {% assign year_pubs = "" | split: "" %}
+  {% for post in publications %}
+    {% if post.year == year %}
+      {% assign year_pubs = year_pubs | push: post %}
+    {% endif %}
+  {% endfor %}
 
+  <table align=""center">
+    {% tablerow post in year_pubs cols: 1 %}
+      <div class="paper-item">
+        <div class="d-flex">
+          <div class="flex-grow-1 ms-3">
+            <a class="pub-link" href="https://doi.org/{{ post.doi }}" target="_blank"
+              >{{ post.title }}</a
+            >
+            <p class="info">
+              {% assign authors = post.authors | split: "," %} {% assign dates =
+              post.year | append: "-" | append: post.month | append: "-" | append:
+              post.day %} {% if authors.size > 5 %} {{ authors[0] | append: "," |
+              append: authors[1] | append: "," | append: authors[2] | append: "," |
+              replace: "[", "" | replace: "'", "" | replace: "]", "" }}
+              <em>et al.</em>
+              {% else %} {% for author in authors %} {{ author | replace: "[", "" |
+              replace: "'", "" | replace: "]", "" }} {% if author != authors.last %},
+              {% endif %} {% endfor %} {% endif %}
+              <em>({{ dates | date: "%b %Y" }})</em>
+            </p>
+          </div>
+          <br />
+        </div>
+      </div>
+    {% endtablerow %}
+  </table>
+
+{% endfor %}
