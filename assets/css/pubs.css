@@ -1,0 +1,13 @@
+ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+li {
+    margin-bottom: .5em;
+}
+
+/* Large screens */
+@media only screen and (min-width: 1024px) {
+}
