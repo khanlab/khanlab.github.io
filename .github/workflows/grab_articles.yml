@@ -64,7 +64,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: Update publications by Actions bot
           title: '[MAINT] Update publications spreadsheet'
-          body: 'New publications found - please check before merging' 
+          body: 'New publications found - please check before merging: https://github.com/khanlab/khanlab.github.io/blob/update_publications/get_publications.ipynb' 
           base: master
           branch: update_publications
 
