@@ -11,7 +11,7 @@ alumni: false
 email: bkarat@uwo.ca
 github: Bradley-Karat
 orcid:
-scholar:
+scholar: https://scholar.google.ca/citations?user=6IN46G4AAAAJ&hl=en
 twitter: bradleykarat
 
 # page settings:
