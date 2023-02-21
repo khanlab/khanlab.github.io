@@ -5,10 +5,10 @@ description = "Khan Computational Imaging Lab website"
 authors = ["Your Name <you@example.com>"]
 
 [tool.poetry.dependencies]
-python = "~3.8"
-biopython = "~1.78"
-jupyter = "~1.0"
-pandas = "~1.2"
+python = ">=3.8, <3.11"
+biopython = "^1.78"
+jupyter = "^1.0"
+pandas = "^1.2"
 
 [tool.poetry.group.actions.dependencies]
 papermill = "~2.3"
