@@ -12,7 +12,7 @@ recent publications on a monthly basis._
 The design of the website and use of Jekyll was inspired by 
 [nbclab.github.io](https://github.com/NBCLab/nbclab.github.io).
 
-All required packages are managed via [Poetry (v1.2.0a2)](https://python-poetry.org/). 
+All required packages are managed via [Poetry (v1.2.x)](https://python-poetry.org/). 
 Click on the package link to see setup instructions.
 _This is only required to run the Jupyter notebook._
 
