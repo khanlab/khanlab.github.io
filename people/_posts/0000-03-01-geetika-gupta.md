@@ -5,7 +5,7 @@ position: Master's student
 affiliation: Neuroscience
 cosupervisor: Dr. Marieke Mur
 image: 
-alumni: false
+alumni: true
 
 # social
 email: 
