@@ -1,15 +1,15 @@
 ---
-name: Geetika Gupta
+name: Peter Van Dyken
 degree: 
-position: Master's student
+position: MD/PhD student
 affiliation: Neuroscience
-cosupervisor: Dr. Marieke Mur
+cosupervisor: Dr. Lena Palaniyappan
 image: 
-alumni: true
+alumni: false
 
 # social
 email: 
-github: 
+github:
 orcid: 
 scholar: 
 twitter:
@@ -19,4 +19,3 @@ layout: post
 ---
 
 ### About 
-
