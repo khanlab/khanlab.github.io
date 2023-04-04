@@ -40,3 +40,6 @@ This package allows you to build BIDS Apps using Snakemake. It offers:
 ```
 
 **Full Documentation:** [here](https://readthedocs.org/projects/snakebids/badge/?version=stable){:target="_blank"}
+
+### Relevant papers:
+* Mölder F, Jablonski KP, Letcher B et al. Sustainable data analysis with Snakemake [version 2; peer review: 2 approved]. F1000Research. 2021. doi: [10.12688/f1000research.29032.2](https://doi.org/10.12688/f1000research.29032.2){:target="_blank"} 
