@@ -109,9 +109,21 @@ body {
   width: 100vw;
   margin-top: 1vh;
   background-color: rgb(0, 0, 80);
-  color: rgb(240, 240, 240);
+  color: rgb(160, 160, 160);
   text-align: center;
   font-size: 10px;
+}
+
+.footer a {
+  color: rgb(240, 240, 240);
+  font-size: 10px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+.footer a:hover {
+  color: rgb(160, 160, 160);
+  text-decoration-color: rgb(160, 160, 160);
 }
 
 h2 {
@@ -194,6 +206,10 @@ a:hover {
 
   .footer {
     font-size: 14px;
+  }
+
+  .footer a {
+    font-size: 12px;
   }
 
   .media-heading {
