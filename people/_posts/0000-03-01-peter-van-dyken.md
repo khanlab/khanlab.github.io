@@ -4,7 +4,7 @@ degree:
 position: MD/PhD student
 affiliation: Neuroscience
 cosupervisor: Dr. Lena Palaniyappan
-image: 
+image: /assets/images/people/peter-vandyken.jpg
 alumni: false
 
 # social
