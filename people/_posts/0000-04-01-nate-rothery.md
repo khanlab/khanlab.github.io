@@ -5,7 +5,7 @@ position: Master's Student
 affiliation: Neuroscience
 cosupervisor: Dr. Penny MacDonald
 image: 
-alumni: true
+alumni: false
 
 # social
 email: nrothery@uwo.ca
