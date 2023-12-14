@@ -2,46 +2,21 @@ name: Update publications
 
 on:
   schedule:
-    # 05:00 UTC on first day of every month 
-    # (min, hr, day (month), month, day (week)
-    - cron: "0 5 1 * *" 
+    # 05:00 UTC on first day of every month
+    - cron: "0 5 1 * *"
   workflow_dispatch:
 
 jobs:
   update:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: ['3.10']
-        poetry-version: ['1.2.2']
-
     steps:
+      - name: Setup environment
+        uses: khanlab/actions/.github/actions/action-setup_task-installPyProject@v0.3.3
+        with:
+          python-version: "3.10"
+
       - name: Checkout master branch
         uses: actions/checkout@master
-
-      - name: Select Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v4
-        with:
-          python-version: ${{ matrix.python-version }}
-
-      - name: Setup Poetry ${{ matrix.poetry-version }}
-        uses: Gr1N/setup-poetry@v8
-        with: 
-          poetry-version: ${{ matrix.poetry-version }}
-
-      - name: Check cache
-        uses: actions/cache@v3
-        id: cache
-        with:
-          path: ~/.cache/pypoetry/virtualenvs
-          key: ${{ runner.os }}-poetry-${{ hashFiles('poetry.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-poetry-
-
-      - name: Install requirements
-        if: steps.cache.outputs.cache-hit != true
-        run: |
-          poetry install --with actions
 
       - name: Run notebook
         run: |
@@ -52,9 +27,9 @@ jobs:
         id: article-condition
         run: |
           if grep -q "0 new articles found." ${{ github.workspace }}/get_publications.ipynb; then
-            echo '::set-output name=hit::false'
+            echo "hit=false" >> $GITHUB_OUTPUT 
           else
-            echo '::set-output name=hit::true'
+            echo "hit=true" >> $GITHUB_OUTPUT
           fi
 
       # Creates a PR for review if new article(s) found
@@ -64,8 +39,8 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: Update publications by Actions bot
-          title: '[MAINT] Update publications spreadsheet'
-          body: 'New publications found - please check before merging: https://github.com/khanlab/khanlab.github.io/blob/update_publications/get_publications.ipynb' 
+          title: "[MAINT] Update publications spreadsheet"
+          body: "New publications found - please check before merging: https://github.com/khanlab/khanlab.github.io/blob/update_publications/get_publications.ipynb"
           base: master
           branch: update_publications
 
@@ -83,4 +58,3 @@ jobs:
         if: steps.article-condition.outputs.hit != 'true'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-
