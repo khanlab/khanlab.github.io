@@ -9,6 +9,7 @@
     outline: rgb(0, 0, 80);
     outline-style: solid;
     outline-width: .25vh;
+    object-fit: cover;
 }
 
 .modal-header .col-sm-7 {
