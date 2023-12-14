@@ -1,11 +1,11 @@
 ---
-# Fields can be left blank! 
+# Fields can be left blank!
 name: Hippunfold
-authors: 
+authors:
   - Jordan DeKraker
   - Ali Khan
 short_description: Automatically model the topological folding structure of the human hippocampus, and computationally unfold the hippocampus to segment subfields and generate hippocampal and dentate gyrus surfaces.
-image:
+image: /assets/images/software/hippunfold.png
 badges:
   - name: documentation
     icon: https://readthedocs.org/projects/hippunfold/badge/?version=latest
@@ -18,7 +18,7 @@ badges:
   - name: zenodo
     icon: https://zenodo.org/badge/282100834.svg
     url: https://zenodo.org/badge/latestdoi/282100834
-  
+
   - name: docker
     icon: https://img.shields.io/docker/pulls/khanlab/hippunfold
     url: https://hub.docker.com/r/khanlab/hippunfold
@@ -45,14 +45,14 @@ The overall workflow can be summarized in the following steps:
 
 1. Generating high-resolution volumetric segmentations of the subfields using the same transformations and volumetric representations of the coordinates.
 
-**Full Documentation:** [here](https://hippunfold.readthedocs.io/en/latest/?badge=latest){:target="_blank"}
+**Full Documentation:** [here](https://hippunfold.readthedocs.io/en/latest/?badge=latest){:target="\_blank"}
 
 ### Relevant papers:
 
-* DeKraker J, Haast RAM, Yousif MD, Karat B, Lau, JC, Köhler S, Khan AR. Automated hippocampal unfolding, morphometry, and subfield segmentation with HippUnfold. eLife. 2022 Dec 15; 11:e77945. doi: [10.7554/eLife.77945](https://doi.org/10.7554/eLife.77945){:target="_blank"}. PMID: 36519725.
+- DeKraker J, Haast RAM, Yousif MD, Karat B, Lau, JC, Köhler S, Khan AR. Automated hippocampal unfolding, morphometry, and subfield segmentation with HippUnfold. eLife. 2022 Dec 15; 11:e77945. doi: [10.7554/eLife.77945](https://doi.org/10.7554/eLife.77945){:target="\_blank"}. PMID: 36519725.
 
-* DeKraker J, Ferko KM, Lau JC, Köhler S, Khan AR. Unfolding the hippocampus: An intrinsic coordinate system for subfield segmentations and quantitative mapping. Neuroimage. 2018 Feb 15;167:408-418. doi: [10.1016/j.neuroimage.2017.11.054](https://doi.org/10.1016/j.neuroimage.2017.11.054){:target="_blank"}. Epub 2017 Nov 23. PMID: 29175494.
+- DeKraker J, Ferko KM, Lau JC, Köhler S, Khan AR. Unfolding the hippocampus: An intrinsic coordinate system for subfield segmentations and quantitative mapping. Neuroimage. 2018 Feb 15;167:408-418. doi: [10.1016/j.neuroimage.2017.11.054](https://doi.org/10.1016/j.neuroimage.2017.11.054){:target="\_blank"}. Epub 2017 Nov 23. PMID: 29175494.
 
-* DeKraker J, Lau JC, Ferko KM, Khan AR, Köhler S. Hippocampal subfields revealed through unfolding and unsupervised clustering of laminar and morphological features in 3D BigBrain. Neuroimage. 2020 Feb 1;206:116328. doi: [10.1016/j.neuroimage.2019.116328](https://doi.org/10.1016/j.neuroimage.2019.116328){:target="_blank"}. Epub 2019 Nov 1. PMID: 31682982.
+- DeKraker J, Lau JC, Ferko KM, Khan AR, Köhler S. Hippocampal subfields revealed through unfolding and unsupervised clustering of laminar and morphological features in 3D BigBrain. Neuroimage. 2020 Feb 1;206:116328. doi: [10.1016/j.neuroimage.2019.116328](https://doi.org/10.1016/j.neuroimage.2019.116328){:target="\_blank"}. Epub 2019 Nov 1. PMID: 31682982.
 
-* DeKraker J, Köhler S, Khan AR. Surface-based hippocampal subfield segmentation. Trends Neurosci. 2021 Nov;44(11):856-863. doi: [10.1016/j.tins.2021.06.005](https://doi.org/10.1016/j.tins.2021.06.005){:target="_blank"}. Epub 2021 Jul 22. PMID: 34304910.
+- DeKraker J, Köhler S, Khan AR. Surface-based hippocampal subfield segmentation. Trends Neurosci. 2021 Nov;44(11):856-863. doi: [10.1016/j.tins.2021.06.005](https://doi.org/10.1016/j.tins.2021.06.005){:target="\_blank"}. Epub 2021 Jul 22. PMID: 34304910.
