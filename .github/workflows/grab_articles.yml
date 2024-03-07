@@ -11,12 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setup environment
-        uses: khanlab/actions/.github/actions/action-setup_task-installPyProject@v0.3.3
+        uses: khanlab/actions/.github/actions/action-setup_task-installPyProject@v0.3.6
         with:
           python-version: "3.10"
 
       - name: Checkout master branch
-        uses: actions/checkout@master
+        uses: actions/checkout@v4
 
       - name: Run notebook
         run: |
@@ -34,7 +34,7 @@ jobs:
 
       # Creates a PR for review if new article(s) found
       - name: Create pull request
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v6
         if: steps.article-condition.outputs.hit == 'true'
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -53,8 +53,9 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git commit -m "Update publications spreadsheet" -a
 
+      # Look to replace this with a versioned github-push action
       - name: Push to master
-        uses: ad-m/github-push-action@master
+        uses: ad-m/github-push-action@v0.8.0
         if: steps.article-condition.outputs.hit != 'true'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
