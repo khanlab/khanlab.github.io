@@ -9,7 +9,7 @@ alumni: false
 
 # social
 email: 
-github: 
+github: github.com/arunthurai
 orcid: 
 scholar: 
 twitter: 
