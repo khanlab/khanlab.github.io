@@ -34,7 +34,7 @@ jobs:
 
       # Creates a PR for review if new article(s) found
       - name: Create pull request
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v7
         if: steps.article-condition.outputs.hit == 'true'
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
