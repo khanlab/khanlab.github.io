@@ -4,7 +4,7 @@ name: Mahmoud Yaser
 position: Master's Student
 affiliation: Biomedical Engineering
 cosupervisor: Dr. Emma Duerden
-image: /assets/images/people/mahmoud-yaser.png
+image: /assets/images/people/mahmoud-yaser.jpeg
 alumni: false
 
 # social
