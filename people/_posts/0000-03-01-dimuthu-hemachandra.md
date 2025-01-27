@@ -5,7 +5,7 @@ position: PhD student
 affiliation: Biomedical Engineering
 cosupervisor: Dr. Penny MacDonald
 image: /assets/images/people/dimuthu-hemachandra.jpg
-alumni: false
+alumni: true
 
 # social
 email: dhemacha@uwo.ca

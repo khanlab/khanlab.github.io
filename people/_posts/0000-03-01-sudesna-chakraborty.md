@@ -5,7 +5,7 @@ position: PhD student
 affiliation: Neuroscience
 cosupervisor: Dr. Taylor Schmitz
 image: /assets/images/people/sudesna-chakraborty.jpg
-alumni: false
+alumni: true
 
 # social
 email: schakr28@uwo.ca

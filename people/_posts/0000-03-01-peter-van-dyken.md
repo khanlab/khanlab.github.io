@@ -5,7 +5,7 @@ position: MD/PhD student
 affiliation: Neuroscience
 cosupervisor: Dr. Lena Palaniyappan
 image: /assets/images/people/peter-vandyken.jpg
-alumni: false
+alumni: true
 
 # social
 email: pvandyk2@uwo.ca

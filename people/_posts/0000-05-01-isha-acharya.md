@@ -4,7 +4,7 @@ name: Isha Acharya
 position: Undergraduate student
 affiliation: Interdisciplinary Medical Sciences
 image:
-alumni: false
+alumni: true
 
 # social
 email: iacharya@uwo.ca
