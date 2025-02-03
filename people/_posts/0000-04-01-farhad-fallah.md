@@ -3,7 +3,7 @@
 name: Farhad Fallah
 position: Master's Student
 affiliation: Biomedical Engineering
-image: /asset/images/people/farhad-fallah.jpg
+image: /asset/images/people/farhad_fallah.jpg
 alumni: false
 
 # social
