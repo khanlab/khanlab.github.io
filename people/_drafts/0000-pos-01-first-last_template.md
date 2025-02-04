@@ -4,7 +4,7 @@ name: Full Name
 position: Postdoctoral Fellow, PhD Student, Master's Student, etc.
 affiliation: Department of Medical Biophysics
 cosupervisor: <if co-supervised>
-image: /asset/images/people/<user>.png
+image: /assets/images/people/<user>.png
 alumni: false/true
 
 # social
