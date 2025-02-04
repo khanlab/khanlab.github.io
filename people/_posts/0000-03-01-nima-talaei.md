@@ -3,7 +3,7 @@
 name: Nima Talaei Kamalabadi
 position: PhD Student
 affiliation: Neuroscience
-cosupervisor: Stefan Kohler
+cosupervisor: Dr. Stefan Kohler
 image: /assets/images/people/nima_talaei.jpg
 alumni: false
 
