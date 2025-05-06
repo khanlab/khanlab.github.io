@@ -9,7 +9,7 @@ alumni: false
 
 # social
 email: cgirigow@uwo.ca
-github: https://github.com/CHIROOTH
+github: CHIROOTH
 # orcid: orcid_user
 # scholar: google-scholar-id
 # twitter: username
