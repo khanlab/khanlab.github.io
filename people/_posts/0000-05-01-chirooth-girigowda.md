@@ -3,16 +3,16 @@
 name: Chirooth Girigowda
 position: Research Assistant
 affiliation: Department of Medical Biophysics
-cosupervisor: <if co-supervised>
+# cosupervisor: <if co-supervised>
 image: /assets/images/people/chirooth.png
 alumni: false
 
 # social
 email: cgirigow@uwo.ca
-github: CHIROOTH
-orcid: orcid_user
-scholar: google-scholar-id
-twitter: username
+github: https://github.com/CHIROOTH
+# orcid: orcid_user
+# scholar: google-scholar-id
+# twitter: username
 
 # page settings:
 layout: post
