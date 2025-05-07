@@ -1,8 +1,8 @@
 ---
 # Fields can be left blank! 
 name: Chirooth Girigowda
-position: Research Assistant
-affiliation: Department of Medical Biophysics
+position: Intern software developer
+affiliation: Robarts Research Institute
 # cosupervisor: <if co-supervised>
 image: /assets/images/people/chirooth.png
 alumni: false
@@ -17,8 +17,6 @@ github: CHIROOTH
 # page settings:
 layout: post
 ---
-
-[This is part is in markdown format]
 
 ### About
 
