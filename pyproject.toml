@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "khanlab.github.io"
+name = "mind.github.io"
 version = "1.0.0"
-description = "Khan Computational Imaging Lab website"
-authors = ["Your Name <you@example.com>"]
+description = "MIND Western website"
+authors = ["Ali Khan"]
 
 [tool.poetry.dependencies]
 python = ">=3.8, <3.11"

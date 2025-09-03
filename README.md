@@ -1,4 +1,4 @@
-# khanlab.github.io (khanlab.ca)
+# mind.github.io 
 
 The website was built using Jekyll and Github pages. Organization of the website 
 is structured such that each page's associated data has a corresponding folder 
