@@ -1,19 +1,17 @@
-- name: Natural Sciences and Engineering Research Council
-  image: /assets/images/index/funding/nserc.png
-  link: "https://www.nserc-crsng.gc.ca"
+- name: Brain Canada Foundation
+  image: /assets/images/index/funding/brain_canada_logo.png
+  link: "https://braincanada.ca"
 
-- name: Canada Research Chairs
-  image: /assets/images/index/funding/crc.png
-  link: "https://www.chairs-chaires.gc.ca"
+- name: New Frontiers in Research Fund
+  image: /assets/images/index/funding/nfrf_logo.jpg
+  link: "https://sshrc-crsh.canada.ca/funding-financement/nfrf-fnfr/index-eng.aspx"
 
-- name: Canadian Institutes of Health Research
-  image: /assets/images/index/funding/cihr.png
-  link: "https://cihr-irsc.gc.ca"
+- name: Western University
+  image: /assets/images/index/funding/western_logo.png
+  link: "https://www.uwo.ca"
 
-- name: Ontario Brain Institute
-  image: /assets/images/index/funding/obi.png
-  link: "https://braininstitute.ca/"
+- name: Schulich School of Medicine and Dentistry
+  image: /assets/images/index/funding/schulich_logo.png
+  link: "https://www.schulich.uwo.ca"
 
-- name: "EpLink - The Ontario Brain Institute Epilepsy Program"
-  image: /assets/images/index/funding/Eplink.png
-  link: "https://eplink.ca/"
+
