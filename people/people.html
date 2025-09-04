@@ -5,14 +5,14 @@ title: "PEOPLE | "
 style: /assets/css/people.css
 ---
 
-{% assign execs = "" | split: "" %}
+{% assign exec = "" | split: "" %}
 {% assign team = "" | split: "" %}
 {% assign staff = "" | split: "" %}
 
 {% for person in site.categories.people %}
   {% case person.role %}
     {% when "exec" %}
-      {% assign execs = execs | push: person %}
+      {% assign exec = exec | push: person %}
     {% when "team" %}
       {% assign team = team | push: person %}
     {% when "staff" %}
@@ -22,7 +22,7 @@ style: /assets/css/people.css
 
 <p>To view a person's profile, click on their name.</p>
 
-{% include people/execs.html %}
+{% include people/exec.html %}
 {% include people/team.html %}
 {% include people/staff.html %}
 
