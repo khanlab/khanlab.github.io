@@ -2,7 +2,7 @@
 
 <!-- Get date and create a unique id -->
 {% assign date = post.date | date: "%b %-d %Y" %} {% assign article-id = date |
-append: '-' | append: post.title | replace: " ", "-" %}
+append: '-' | append: post.title | replace: " ", "-" | replace: "$", "" | replace: ".", "" | replace: ",", "" | replace: "(", "" | replace: ")", "" | replace: ":", "" | replace: ";", "" | replace: "'", "" | replace: '"', "" | replace: "&", "and" | replace: "%", "percent" | replace: "#", "number" | replace: "@", "at" %}
 
 <div class="row article-item">
   <div class="d-flex">
