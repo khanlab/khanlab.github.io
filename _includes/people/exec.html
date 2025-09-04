@@ -2,7 +2,7 @@
 <h2>Executive Committee</h2>
 <hr />
 <table class="table">
-  {% tablerow person in current cols:2 %}
+  {% tablerow person in exec cols:2 %}
   <!-- Set person image -->
   {% assign image = "/assets/images/people/placeholder.png" %} {% for
   static_file in site.static_files %} {% if person.image == static_file.path %}

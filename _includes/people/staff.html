@@ -2,7 +2,7 @@
 <h2>Staff and trainees</h2>
 <hr />
 <table class="table">
-  {% tablerow person in current cols:2 %}
+  {% tablerow person in staff cols:2 %}
   <!-- Set person image -->
   {% assign image = "/assets/images/people/placeholder.png" %} {% for
   static_file in site.static_files %} {% if person.image == static_file.path %}
