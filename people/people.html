@@ -9,7 +9,7 @@ style: /assets/css/people.css
 {% assign team = "" | split: "" %}
 {% assign staff = "" | split: "" %}
 
-{% for person in site.categories.people %}
+{% for person in site.categories.people reversed %}
   {% case person.role %}
     {% when "exec" %}
       {% assign exec = exec | push: person %}
