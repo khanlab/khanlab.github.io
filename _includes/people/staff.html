@@ -1,0 +1,150 @@
+<!-- Staff and trainees -->
+<h2>Staff and trainees</h2>
+<hr />
+<table class="table">
+  {% tablerow person in current cols:2 %}
+  <!-- Set person image -->
+  {% assign image = "/assets/images/people/placeholder.png" %} {% for
+  static_file in site.static_files %} {% if person.image == static_file.path %}
+  {% assign image = person.image %} {% endif %} {% endfor %}
+  {% assign person-id = person.name | replace: " ", "-" %}
+
+  <!-- Person's mini profile -->
+  <div class="d-flex">
+    <div class="flex-shrink-0">
+      <img class="member-photo" src="{{ image }}" />
+    </div>
+    <div class="flex-grow-1 ms-3">
+      <button
+        type="button"
+        class="media-heading"
+        data-bs-toggle="modal"
+        data-bs-target="#{{ person-id }}"
+      >
+        {{ person.name }}{% if person.degree %}, {{ person.degree }} {% endif %}
+      </button>
+      <p class="info">
+        {{ person.position }}<br />
+        {{ person.affiliation }}<br />
+        {% if person.cosupervisor %}
+        <em>Co-supervised by {{ person.cosupervisor }}</em>
+        {% endif %}
+        <br />
+      </p>
+      <p class="socials">
+        {% if person.email %}
+        <a href="mailto:{{ person.email }}"><i class="fas fa-envelope"></i> </a>
+        {% endif %} {% if person.github %}
+        <a href="https://github.com/{{ person.github }}" target="_blank"
+          ><i class="fab fa-github" aria-hidden="true"></i>
+        </a>
+        {% endif %} {% if person.orcid %}
+        <a href="https://orcid.org/{{ person.orcid }}" target="_blank"
+          ><i class="fab fa-orcid" aria-hidden="true"></i>
+        </a>
+        {% endif %} {% if person.scholar %}
+        <a
+          href="https://scholar.google.ca/citations?hl=en&user={{ person.scholar }}"
+          target="_blank"
+          ><i class="fas fa-graduation-cap" aria-hidden="true"></i>
+        </a>
+        {% endif %} {% if person.twitter %}
+        <a href="https://twitter.com/{{ person.twitter }}" target="_blank"
+          ><i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+        {% endif %}
+      </p>
+    </div>
+  </div>
+
+  <!-- Profile popup (modal) -->
+  <div
+    class="modal fade"
+    id="{{ person-id }}"
+    tabindex="-1"
+    aria-labelledby="profile-modal-label"
+    aria-hidden="true"
+  >
+    <div
+      class="
+        modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl
+      "
+    >
+      <!-- Modal Header-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <h2 id="profile-modal-label">{{ person.name }}</h2>
+            {% if person.cosupervisor %}
+            <p><em>Co-supervised by {{ person.cosupervisor }}</em></p>
+            {% endif %}
+          </div>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xl-4 col-md-12 col-sm-12 horizontal-profile">
+                <div class="text-center">
+                  <img class="member-photo" src="{{ image }}" />
+                  <p class="member-affiliation">
+                    {{ person.position }} <br />
+                    {{ person.affiliation }}
+                  </p>
+                </div>
+                <ul class="member-socials">
+                  <li>
+                    Email:
+                    <a href="mailto:{{ person.email }}">{{ person.email }}</a>
+                  </li>
+                  <li>
+                    Github:
+                    <a
+                      href="https://github.com/{{ person.github }}"
+                      target="_blank"
+                      >{{ person.github }}</a
+                    >
+                  </li>
+                  <li>
+                    ORCiD:
+                    <a
+                      href="https://orcid.org/{{ person.orcid }}"
+                      target="_blank"
+                      >{{ person.orcid }}</a
+                    >
+                  </li>
+                  <li>
+                    Google Scholar:
+                    <a
+                      href="https://scholar.google.ca/citations?hl=en&user={{ person.scholar }}"
+                      target="_blank"
+                      >{{ person.scholar }}</a
+                    >
+                  </li>
+                  <li>
+                    Twitter:
+                    <a
+                      href="https://twitter.com/{{ person.twitter }}"
+                      target="_blank"
+                      >{% if person.twitter %}@{% endif %}{{ person.twitter
+                      }}</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xl-8 col-md-12 col-sm-12 profile-blurb">
+                {{ person }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endtablerow %}
+</table>

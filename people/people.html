@@ -4,14 +4,27 @@ permalink: /people/
 title: "PEOPLE | "
 style: /assets/css/people.css
 ---
-{% assign current = "" | split: "" %} {% assign alumni = "" | split: "" %} {%
-for person in site.categories.people reversed %} {% if person.alumni == true %}
-{% assign alumni = alumni | push: person %} {% else %} {% assign current =
-current | push: person %} {% endif %} {% endfor %}
+
+{% assign execs = "" | split: "" %}
+{% assign team = "" | split: "" %}
+{% assign staff = "" | split: "" %}
+
+{% for person in site.categories.people %}
+  {% case person.role %}
+    {% when "exec" %}
+      {% assign execs = execs | push: person %}
+    {% when "team" %}
+      {% assign team = team | push: person %}
+    {% when "staff" %}
+      {% assign staff = staff | push: person %}
+  {% endcase %}
+{% endfor %}
 
 <p>To view a person's profile, click on their name.</p>
 
-{% include people/current.html %}
+{% include people/execs.html %}
+{% include people/team.html %}
+{% include people/staff.html %}
 
-<br/>
-{% include people/alumni.html %}
+
+

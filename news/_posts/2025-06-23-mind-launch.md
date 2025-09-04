@@ -6,4 +6,4 @@ image_desc: New website launch
 # page settings:
 layout: post
 ---
-[Western researchers launch brain imaging platform with $2.9M boost from Brain Canada](https://news.westernu.ca/2025/06/imaging-platform-brains-canada/)
+See news article [here](https://news.westernu.ca/2025/06/imaging-platform-brains-canada/)
