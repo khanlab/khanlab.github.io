@@ -6,10 +6,39 @@
 }
 
 body {
-  display: none;
+  display: block; /* Changed from none to block for better fallback */
   background-color: rgb(240, 240, 240);
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Merriweather Sans", Arial, sans-serif; /* Added fallback fonts */
   font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Accessibility improvements */
+.visually-hidden-focusable {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.visually-hidden-focusable:focus {
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 0.5rem !important;
+  margin: 0 !important;
+  overflow: visible !important;
+  clip: auto !important;
+  white-space: normal !important;
+  background: #000 !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  z-index: 999999 !important;
 }
 
 .container {
@@ -17,17 +46,37 @@ body {
   margin-bottom: 1.5vh;
   width: 85vw;
   min-height: 100vh;
+  max-width: 1200px; /* Added max-width for better readability */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nav-brand {
   width: 35vw;
   margin-left: 2.5vw;
   margin-top: 2.5vw;
+  max-width: 300px; /* Prevent logo from being too large */
 }
 
+/* Enhanced navbar styles */
 .navbar-light .navbar-toggler {
   color: transparent;
   border-color: transparent;
+  padding: 0.5rem;
+}
+
+.navbar-nav .nav-link {
+  color: rgb(0, 0, 80) !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: rgb(0, 0, 120) !important;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .animated-icon {

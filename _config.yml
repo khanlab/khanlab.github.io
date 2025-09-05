@@ -1,0 +1,87 @@
+# Site settings
+title: "MIND Platform"
+description: "The Mesoscopic Integrated Neuroimaging Data (MIND) Platform revolutionizes brain research by combining Canada's most powerful MRI scanner with cutting-edge microscopy technology."
+url: "https://mind-western.github.io"
+baseurl: ""
+
+# Site metadata
+author: "MIND Platform Team"
+email: "info@mind-platform.org"
+twitter_username: mind_platform
+github_username: mind-western
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:year/:month/:day/:title/
+
+# Collections
+collections:
+  people:
+    output: true
+    permalink: /:collection/:path/
+  software:
+    output: true
+    permalink: /:collection/:path/
+  news:
+    output: true
+    permalink: /:collection/:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "people"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "software"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "news"
+    values:
+      layout: "post"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - README.md
+  - REPLACE_PHOTOS_NOW.md
+  - get_publications.ipynb
+  - poetry.lock
+  - pyproject.toml
+
+# SEO and performance
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Site navigation
+navigation:
+  - name: Home
+    link: /
+  - name: People
+    link: /people/
+  - name: Software
+    link: /software/
+  - name: Seminars
+    link: /seminars/
+  - name: Contact
+    link: /contact/
