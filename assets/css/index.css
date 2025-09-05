@@ -11,6 +11,18 @@
   display: block;
 }
 
+.platform-title {
+  font-family: "Lato", sans-serif;
+  color: rgb(0, 0, 80);
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.15vw;
+  text-transform: uppercase;
+  text-shadow: 0.15vw 0 #000;
+  margin: 1rem 0;
+  line-height: 1.2;
+}
+
 .d-flex {
   padding: 0;
 }
@@ -58,6 +70,14 @@
     margin: 1rem auto;
   }
 
+  .platform-title {
+    font-size: 20px;
+    letter-spacing: 0.1vw;
+    text-shadow: 0.1vw 0 #000;
+    margin: 0.8rem 0;
+    padding: 0 10px;
+  }
+
   .funding {
     height: 4vh;
     margin: 0.5vh;
@@ -86,6 +106,12 @@
     max-width: 400px;
   }
 
+  .platform-title {
+    font-size: 28px;
+    letter-spacing: 0.12vw;
+    text-shadow: 0.12vw 0 #000;
+  }
+
   .funding {
     height: 6vh;
     margin: 0.8vh;
@@ -102,6 +128,13 @@
 
 /* Large screens */
 @media only screen and (min-width: 1024px) {
+  .platform-title {
+    font-size: 36px;
+    letter-spacing: 0.2vw;
+    text-shadow: 0.2vw 0 #000;
+    margin: 1.5rem 0;
+  }
+
   .funding {
     width: auto;
     height: 75px;
