@@ -8,6 +8,7 @@ style: /assets/css/people.css
 {% assign exec = "" | split: "" %}
 {% assign team = "" | split: "" %}
 {% assign staff = "" | split: "" %}
+{% assign collaborator = "" | split: "" %}
 
 {% for person in site.categories.people reversed %}
   {% case person.role %}
@@ -17,6 +18,8 @@ style: /assets/css/people.css
       {% assign team = team | push: person %}
     {% when "staff" %}
       {% assign staff = staff | push: person %}
+    {% when "collaborator" %}
+      {% assign collaborator = collaborator | push: person %}
   {% endcase %}
 {% endfor %}
 
@@ -24,6 +27,7 @@ style: /assets/css/people.css
 
 {% include people/exec.html %}
 {% include people/team.html %}
+{% include people/collaborator.html %}
 {% include people/staff.html %}
 
 
