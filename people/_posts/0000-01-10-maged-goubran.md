@@ -4,7 +4,7 @@ degree: PhD
 position: Collaborator
 affiliation: University of Toronto
 cosupervisor:
-image: /assets/images/people/placeholder.png
+image: /assets/images/people/maged-goubran.jpg
 role: collaborator
 
 # social

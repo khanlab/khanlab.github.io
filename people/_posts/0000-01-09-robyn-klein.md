@@ -4,7 +4,7 @@ degree: PhD
 position: Co-Investigator
 affiliation: Microbiology and Immunology
 cosupervisor:
-image: /assets/images/people/placeholder.png
+image: /assets/images/people/robyn-klein.jpg
 role: team
 
 # social
