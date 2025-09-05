@@ -4,7 +4,7 @@ degree: PhD
 position: Co-Investigator
 affiliation: Physiology & Pharmacology
 cosupervisor:
-image: /assets/images/people/placeholder.png
+image: /assets/images/people/stefan-everling.jpg
 role: team
 
 # social

@@ -4,7 +4,7 @@ degree: PhD
 position: Co-Investigator
 affiliation: Medical Biophysics
 cosupervisor:
-image: /assets/images/people/placeholder.png
+image: /assets/images/people/ravi-menon.jpg
 role: team
 
 # social

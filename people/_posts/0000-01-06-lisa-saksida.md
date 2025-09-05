@@ -4,7 +4,7 @@ degree: PhD
 position: Co-Investigator
 affiliation: Physiology & Pharmacology
 cosupervisor:
-image: /assets/images/people/placeholder.png
+image: /assets/images/people/lisa-saksida.jpg
 role: team
 
 # social

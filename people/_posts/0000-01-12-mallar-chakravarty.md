@@ -4,7 +4,7 @@ degree: PhD
 position: Collaborator
 affiliation: McGill University
 cosupervisor:
-image: /assets/images/people/placeholder.png
+image: /assets/images/people/mallar-chakravarty.jpg
 role: collaborator
 
 # social

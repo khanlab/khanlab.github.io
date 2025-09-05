@@ -4,7 +4,7 @@ degree: PhD
 position: Collaborator
 affiliation: Western University
 cosupervisor:
-image: /assets/images/people/placeholder.png
+image: /assets/images/people/wataru-inoue.jpg
 role: collaborator
 
 # social

@@ -5,3 +5,7 @@ _site
 .ipynb_checkpoints
 vendor/
 .bundle/
+
+# Working documents for photo search
+PHOTO_SEARCH_GUIDE.md
+find_photos.sh
