@@ -1,7 +1,14 @@
-<strong>
+<div class="text-center">
+  <p>&copy; <span id="current-year">2025</span> MIND Platform - Western University</p>
+</div>
 
-  <script>
-    new Date().getFullYear() > 2025 &&
-      document.write("&copy 2025 - " + new Date().getFullYear() + "&nbspKhanlab");
-  </script>
-</strong>
+<script>
+  // Update copyright year if current year is greater than 2025
+  (function() {
+    const currentYear = new Date().getFullYear();
+    const yearElement = document.getElementById('current-year');
+    if (currentYear > 2025) {
+      yearElement.textContent = '2025-' + currentYear;
+    }
+  })();
+</script>

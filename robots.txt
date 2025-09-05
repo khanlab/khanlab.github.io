@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Allow crawling of CSS and JS files
+Allow: /assets/
+
+# Sitemap location
+Sitemap: https://mind-western.github.io/sitemap.xml
