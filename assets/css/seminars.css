@@ -1,0 +1,136 @@
+/* Seminars page specific styles */
+
+.seminar-header {
+    background-color: #f8f9fa;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+}
+
+.seminar-info-card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.seminar-item {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+.seminar-item:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.seminar-date {
+    font-weight: bold;
+    color: #0056b3;
+    font-size: 1.1rem;
+}
+
+.seminar-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #212529;
+    margin: 0.5rem 0;
+}
+
+.seminar-presenter {
+    font-style: italic;
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+}
+
+.seminar-abstract {
+    color: #495057;
+    line-height: 1.5;
+}
+
+.seminar-tags {
+    margin-top: 1rem;
+}
+
+.seminar-tag {
+    display: inline-block;
+    background-color: #e7f1ff;
+    color: #0056b3;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.seminar-links {
+    margin-top: 1rem;
+}
+
+.seminar-links .btn {
+    margin-right: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.upcoming-seminars .seminar-item {
+    border-left: 4px solid #28a745;
+}
+
+.archive-seminars .seminar-item {
+    border-left: 4px solid #6c757d;
+}
+
+.info-section {
+    background-color: #e7f1ff;
+    border-left: 4px solid #0056b3;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.agenda-item {
+    border-bottom: 1px solid #dee2e6;
+    padding: 0.75rem 0;
+}
+
+.agenda-item:last-child {
+    border-bottom: none;
+}
+
+.filter-tags {
+    margin-bottom: 1.5rem;
+}
+
+.filter-tag {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.filter-tag:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.filter-tag.active {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .seminar-header {
+        padding: 1rem 0;
+    }
+    
+    .seminar-info-card {
+        padding: 1rem;
+    }
+    
+    .seminar-item {
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,34 @@
+# Upcoming seminars
+upcoming:
+  - date: "2025-09-16"
+    time: "1:00 PM - 2:00 PM"
+    title: "Inaugural MIND Lunch Series"
+    presenter: "TBD"
+    affiliation: ""
+    topic: "Light Sheet Microscopy & MRI Integration"
+    abstract: "The MIND platform is launching a new monthly lunch meeting series for users of Light Sheet Microscopy (LSM) 🔬 and MRI 🧠 — a chance to connect, learn, and discuss the latest in imaging, over pizza 🍕! Join us for our first session on Tuesday, September 16, 2025."
+    tags: ["networking", "introduction", "LSM", "MRI"]
+    registration_required: true
+    zoom_link: "https://westernuniversity.zoom.us/j/96145254780"
+    
+  - date: "2025-10-21"
+    time: "1:00 PM - 2:00 PM"
+    title: "Advanced Light Sheet Microscopy Techniques"
+    presenter: "TBD"
+    affiliation: ""
+    topic: "LSM methodology"
+    abstract: "To be announced"
+    tags: ["LSM", "methodology"]
+    registration_required: true
+    zoom_link: "https://westernuniversity.zoom.us/j/96145254780"
+    
+  - date: "2025-11-18"
+    time: "1:00 PM - 2:00 PM"
+    title: "MRI-LSM Integration and Alignment"
+    presenter: "TBD"
+    affiliation: ""
+    topic: "Multi-modal imaging"
+    abstract: "To be announced"
+    tags: ["MRI", "LSM", "integration"]
+    registration_required: true
+    zoom_link: "https://westernuniversity.zoom.us/j/96145254780"
