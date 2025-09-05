@@ -7,8 +7,8 @@ short_description: A Snakebids app for quantitative analysis of SPIM (lightsheet
 image: /assets/images/software/placeholder.png
 badges:
   - name: documentation
-    icon: https://readthedocs.org/projects/spimquant/badge/?version=latest
-    url: https://spimquant.readthedocs.io
+    icon: https://img.shields.io/badge/docs-github-blue
+    url: https://github.com/khanlab/SPIMquant/blob/main/README.md
 
   - name: version
     icon: https://img.shields.io/github/v/tag/khanlab/SPIMquant?label=version
@@ -74,4 +74,4 @@ If your input BIDS dataset stores data in zarr zipstores (e.g. SPIM files ending
 --filter-spim extension='ome.zarr.zip'
 ```
 
-**Full Documentation:** [here](https://spimquant.readthedocs.io){:target="\_blank"}
+**Full Documentation:** [here](https://github.com/khanlab/SPIMquant/blob/main/README.md){:target="\_blank"}
