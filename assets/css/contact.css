@@ -3,11 +3,27 @@
     height: 30vw;
 }
 
+/* Mobile and small tablet styles */
+@media only screen and (max-width: 768px) {
+    #map {
+        width: 95vw;
+        height: 40vw;
+        min-height: 250px;
+    }
+}
+
+/* Medium tablets */
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+    #map {
+        width: 70vw;
+        height: 35vw;
+    }
+}
+
 /* Large screens */
 @media only screen and (min-width: 1024px) {
     #map {
         width: 40vw;
         height: 20vw;
     }
-
 }
