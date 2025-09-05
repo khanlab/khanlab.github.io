@@ -3,3 +3,5 @@ Gemfile.lock
 _site
 .*venv
 .ipynb_checkpoints
+vendor/
+.bundle/
