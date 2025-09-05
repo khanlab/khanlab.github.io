@@ -1,0 +1,237 @@
+---
+layout: base
+permalink: /seminars/
+title: "SEMINARS |"
+style: /assets/css/seminars.css
+---
+
+<!-- Get data from files -->
+{% assign info = site.data.seminars.info %}
+{% assign upcoming = site.data.seminars.upcoming.upcoming %}
+{% assign archive = site.data.seminars.archive.archive %}
+
+<!-- Header Section -->
+<div class="row">
+  <div class="col-12">
+    <div class="seminar-header text-center">
+      <h1>{{ info.series_title }}</h1>
+      <p class="lead">{{ info.description }}</p>
+    </div>
+  </div>
+</div>
+
+<!-- General Information -->
+<div class="row">
+  <div class="col-lg-8">
+    <div class="seminar-info-card">
+      <h3>📅 Series Information</h3>
+      <p><strong>Schedule:</strong> {{ info.schedule }}</p>
+      <p><strong>Location:</strong></p>
+      <ul>
+        <li><strong>In Person:</strong> {{ info.location.in_person }}</li>
+        <li><strong>Virtual:</strong> <a href="{{ info.location.virtual }}" target="_blank">Zoom Meeting</a></li>
+      </ul>
+      
+      <h4>📋 Typical Agenda</h4>
+      {% for item in info.agenda %}
+      <div class="agenda-item">
+        <strong>{{ item.duration }}:</strong> {{ item.description }}
+      </div>
+      {% endfor %}
+      
+      <div class="mt-3">
+        <a href="{{ info.signup_form }}" class="btn btn-primary" target="_blank">
+          📝 Register Your Attendance
+        </a>
+        <a href="mailto:{{ info.contact_email }}" class="btn btn-outline-primary">
+          📧 Contact Us
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-lg-4">
+    <div class="info-section">
+      <h4>💡 About the Series</h4>
+      <p>Join researchers, students, and staff working with cutting-edge imaging technologies. Share your work, learn from others, and build collaborations over lunch!</p>
+      
+      <h5>🎯 Who Should Attend?</h5>
+      <ul>
+        <li>Light Sheet Microscopy users</li>
+        <li>MRI researchers</li>
+        <li>Students and trainees</li>
+        <li>Anyone interested in imaging</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Upcoming Seminars -->
+<div class="row">
+  <div class="col-12">
+    <h2>📅 Upcoming Seminars</h2>
+    <hr />
+    
+    {% if upcoming.size > 0 %}
+    <div class="upcoming-seminars">
+      {% for seminar in upcoming %}
+      <div class="seminar-item">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="seminar-date">{{ seminar.date | date: "%B %d, %Y" }}</div>
+            <div class="text-muted">{{ seminar.time }}</div>
+          </div>
+          <div class="col-md-9">
+            <div class="seminar-title">{{ seminar.title }}</div>
+            {% if seminar.presenter != "TBD" and seminar.presenter != "" %}
+            <div class="seminar-presenter">{{ seminar.presenter }}{% if seminar.affiliation != "" %}, {{ seminar.affiliation }}{% endif %}</div>
+            {% endif %}
+            {% if seminar.topic %}
+            <div class="seminar-presenter">Topic: {{ seminar.topic }}</div>
+            {% endif %}
+            
+            {% if seminar.abstract and seminar.abstract != "To be announced" %}
+            <div class="seminar-abstract">{{ seminar.abstract }}</div>
+            {% endif %}
+            
+            {% if seminar.tags %}
+            <div class="seminar-tags">
+              {% for tag in seminar.tags %}
+              <span class="seminar-tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
+            {% endif %}
+            
+            <div class="seminar-links">
+              {% if seminar.zoom_link %}
+              <a href="{{ seminar.zoom_link }}" class="btn btn-sm btn-primary" target="_blank">
+                💻 Join Zoom
+              </a>
+              {% endif %}
+              {% if seminar.registration_required %}
+              <a href="{{ info.signup_form }}" class="btn btn-sm btn-outline-primary" target="_blank">
+                📝 Register
+              </a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="info-section">
+      <p>No upcoming seminars scheduled at this time. Check back soon or subscribe to our mailing list for updates!</p>
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+<!-- Archive Section -->
+<div class="row mt-4">
+  <div class="col-12">
+    <h2>📚 Seminar Archive</h2>
+    <hr />
+    
+    {% if archive.size > 0 %}
+    <!-- Filter tags -->
+    <div class="filter-tags">
+      <span class="seminar-tag filter-tag active" data-filter="all">All</span>
+      {% assign all_tags = "" | split: "" %}
+      {% for seminar in archive %}
+        {% for tag in seminar.tags %}
+          {% unless all_tags contains tag %}
+            {% assign all_tags = all_tags | push: tag %}
+          {% endunless %}
+        {% endfor %}
+      {% endfor %}
+      {% for tag in all_tags %}
+      <span class="seminar-tag filter-tag" data-filter="{{ tag }}">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    
+    <div class="archive-seminars">
+      {% for seminar in archive reversed %}
+      <div class="seminar-item" data-tags="{{ seminar.tags | join: ',' }}">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="seminar-date">{{ seminar.date | date: "%B %d, %Y" }}</div>
+            <div class="text-muted">{{ seminar.time }}</div>
+            {% if seminar.attendance %}
+            <div class="text-muted">Attendance: {{ seminar.attendance }}</div>
+            {% endif %}
+          </div>
+          <div class="col-md-9">
+            <div class="seminar-title">{{ seminar.title }}</div>
+            {% if seminar.presenter %}
+            <div class="seminar-presenter">{{ seminar.presenter }}{% if seminar.affiliation %}, {{ seminar.affiliation }}{% endif %}</div>
+            {% endif %}
+            
+            {% if seminar.abstract %}
+            <div class="seminar-abstract">{{ seminar.abstract }}</div>
+            {% endif %}
+            
+            {% if seminar.tags %}
+            <div class="seminar-tags">
+              {% for tag in seminar.tags %}
+              <span class="seminar-tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
+            {% endif %}
+            
+            <div class="seminar-links">
+              {% if seminar.recording_link %}
+              <a href="{{ seminar.recording_link }}" class="btn btn-sm btn-success" target="_blank">
+                🎥 Recording
+              </a>
+              {% endif %}
+              {% if seminar.slides_link %}
+              <a href="{{ seminar.slides_link }}" class="btn btn-sm btn-info" target="_blank">
+                📊 Slides
+              </a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="info-section">
+      <p>This is a new seminar series! Archive content will be available after our first sessions.</p>
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+<!-- JavaScript for filtering -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const filterTags = document.querySelectorAll('.filter-tag');
+    const seminarItems = document.querySelectorAll('.archive-seminars .seminar-item');
+    
+    filterTags.forEach(tag => {
+        tag.addEventListener('click', function() {
+            // Remove active class from all tags
+            filterTags.forEach(t => t.classList.remove('active'));
+            // Add active class to clicked tag
+            this.classList.add('active');
+            
+            const filter = this.getAttribute('data-filter');
+            
+            seminarItems.forEach(item => {
+                if (filter === 'all') {
+                    item.style.display = 'block';
+                } else {
+                    const itemTags = item.getAttribute('data-tags').split(',');
+                    if (itemTags.includes(filter)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                }
+            });
+        });
+    });
+});
+</script>
