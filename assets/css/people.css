@@ -31,6 +31,41 @@
     margin-bottom: 1vh;
 }
 
+/* Mobile and small tablet styles */
+@media only screen and (max-width: 768px) {
+    .member-photo {
+        width: 60px;
+        height: 60px;
+        outline-width: 2px;
+    }
+
+    .modal-header .col-sm-7 {
+        margin-left: 1vw;
+    }
+
+    .member-affiliation {
+        margin-top: 0.5vw;
+        font-size: 12px;
+    }
+}
+
+/* Medium tablets */
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+    .member-photo {
+        width: 8vw;
+        height: 8vw;
+    }
+
+    .socials {
+        display: initial;
+    }
+
+    .socials a {
+        margin-right: 0.3vw;
+        text-decoration: none;
+    }
+}
+
 /* Large screens */
 @media only screen and (min-width: 1024px) {
     .member-photo {
