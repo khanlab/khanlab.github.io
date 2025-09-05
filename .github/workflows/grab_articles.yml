@@ -20,7 +20,7 @@ jobs:
 
       - name: Run notebook
         run: |
-          poetry run ipython kernel install --name "khanlab.github.io" --user
+          poetry run ipython kernel install --name "mind-western.github.io" --user
           poetry run papermill ${{ github.workspace }}/get_publications.ipynb ${{ github.workspace }}/get_publications.ipynb
 
       - name: New article condition
@@ -40,7 +40,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: Update publications by Actions bot
           title: "[MAINT] Update publications spreadsheet"
-          body: "New publications found - please check before merging: https://github.com/khanlab/khanlab.github.io/blob/update_publications/get_publications.ipynb"
+          body: "New publications found - please check before merging: https://github.com/mind-western/mind-western.github.io/blob/update_publications/get_publications.ipynb"
           base: master
           branch: update_publications
 
