@@ -1,19 +1,20 @@
-// Navbar
-$(document).ready(function () {
-  $(".navbar-toggler").on("click", function () {
-    $(".animated-icon").toggleClass("open");
-  });
+// Navbar - vanilla JavaScript version (fallback for when jQuery is blocked)
+document.addEventListener('DOMContentLoaded', function() {
+  const navbarToggler = document.querySelector('.navbar-toggler');
+  const animatedIcon = document.querySelector('.animated-icon');
+  
+  if (navbarToggler && animatedIcon) {
+    navbarToggler.addEventListener('click', function() {
+      animatedIcon.classList.toggle('open');
+    });
+  }
 });
 
-// Page transition - currently breaks open new target window 
-// $(document).ready(function() {
-//   $("body").show(500);
-//   $("a").click(function() {
-//       $link = $(this).attr("href");
-//       setTimeout(function(){
-//           window.location.replace($link);
-//       },900);
-//       $("body").hide(1000);
-//       return false;
-//   });
-// });
+// Fallback jQuery version if available
+if (typeof $ !== 'undefined') {
+  $(document).ready(function () {
+    $(".navbar-toggler").on("click", function () {
+      $(".animated-icon").toggleClass("open");
+    });
+  });
+}

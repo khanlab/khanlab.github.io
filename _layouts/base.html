@@ -1,11 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ site.lang | default: 'en' }}">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="KhanLab website" />
-
-    <title>{{ page.title }} KhanLab</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+    <meta name="keywords" content="medical imaging, computational imaging, image processing, medical analysis, khan lab, university of western ontario" />
+    <meta name="author" content="{{ site.author }}" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="{{ page.title | default: site.title }}" />
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@{{ site.twitter_username }}" />
+    
+    <title>{{ page.title }}{{ site.title }}</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
 
     <!-- CSS-->
     <link
@@ -29,6 +47,41 @@
     {% if page.style %}
     <link rel="stylesheet" href="{{ page.style }}" />
     {% endif %}
+    
+    <!-- Jekyll SEO tag -->
+    {% seo %}
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Khan Computational Imaging Lab",
+      "alternateName": "KhanLab",
+      "url": "{{ site.url }}",
+      "logo": "{{ site.url }}/assets/images/khanlab_logo.png",
+      "description": "{{ site.description }}",
+      "foundingDate": "2015",
+      "founder": {
+        "@type": "Person",
+        "name": "Ali Khan"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "London",
+        "addressRegion": "Ontario",
+        "addressCountry": "Canada"
+      },
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "University of Western Ontario"
+      },
+      "sameAs": [
+        "https://github.com/khanlab",
+        "https://twitter.com/khanlab_uwo"
+      ]
+    }
+    </script>
   </head>
 
   <body class="d-flex flex-column h-100">
@@ -44,7 +97,7 @@
     <footer class="footer mt-auto py-3">{% include footer.html %}</footer>
 
     <!-- Javascript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"

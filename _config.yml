@@ -1,0 +1,38 @@
+# Site Configuration
+title: "Khan Computational Imaging Lab"
+email: "ali.khan@uwo.ca"
+description: >-
+  Medical images play a critical role in the diagnosis and monitoring of disease, 
+  and the planning and guidance of surgical therapies. Our group develops and applies 
+  sophisticated image processing and analysis techniques to extract, quantify, and 
+  distill information from medical images.
+baseurl: ""
+url: "https://khanlab.github.io"
+twitter_username: khanlab_uwo
+github_username: khanlab
+
+# SEO
+author: "Khan Computational Imaging Lab"
+lang: "en"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfile
+  - gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - poetry.lock
+  - pyproject.toml
+  - get_publications.ipynb
