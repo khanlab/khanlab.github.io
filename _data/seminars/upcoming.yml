@@ -10,25 +10,3 @@ upcoming:
     tags: ["networking", "introduction", "LSM", "MRI"]
     registration_required: true
     zoom_link: "https://westernuniversity.zoom.us/j/96145254780"
-    
-  - date: "2025-10-21"
-    time: "1:00 PM - 2:00 PM"
-    title: "Advanced Light Sheet Microscopy Techniques"
-    presenter: "TBD"
-    affiliation: ""
-    topic: "LSM methodology"
-    abstract: "To be announced"
-    tags: ["LSM", "methodology"]
-    registration_required: true
-    zoom_link: "https://westernuniversity.zoom.us/j/96145254780"
-    
-  - date: "2025-11-18"
-    time: "1:00 PM - 2:00 PM"
-    title: "MRI-LSM Integration and Alignment"
-    presenter: "TBD"
-    affiliation: ""
-    topic: "Multi-modal imaging"
-    abstract: "To be announced"
-    tags: ["MRI", "LSM", "integration"]
-    registration_required: true
-    zoom_link: "https://westernuniversity.zoom.us/j/96145254780"
