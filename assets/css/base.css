@@ -6,7 +6,7 @@
 }
 
 body {
-  display: none;
+  display: block;
   background-color: rgb(240, 240, 240);
   font-family: "Merriweather Sans", sans-serif;
   font-size: 14px;
@@ -238,4 +238,81 @@ a:hover {
   .socials {
     vertical-align: bottom;
   }
+}
+
+/* Additional responsive improvements */
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 95vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+  
+  .nav-brand {
+    width: 40vw;
+    max-width: 200px;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .funding img {
+    max-width: 120px;
+    margin: 0.5rem;
+  }
+  
+  #lab-photo {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Image responsiveness */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.funding {
+  max-width: 150px;
+  margin: 1rem 0.5rem;
+  filter: grayscale(20%);
+  transition: filter 0.3s ease;
+}
+
+.funding:hover {
+  filter: grayscale(0%);
+}
+
+/* Improved accessibility and contrast */
+a:focus {
+  outline: 2px solid rgb(0, 0, 80);
+  outline-offset: 2px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 2px rgb(0, 0, 80);
+}
+
+/* Better spacing and typography */
+.row {
+  margin-bottom: 2rem;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Loading performance */
+.nav-brand {
+  object-fit: contain;
+}
+
+#lab-photo {
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
