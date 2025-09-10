@@ -5,7 +5,7 @@ position: Intern software developer
 affiliation: Robarts Research Institute
 # cosupervisor: <if co-supervised>
 image: /assets/images/people/chirooth.png
-alumni: false
+alumni: true
 
 # social
 email: cgirigow@uwo.ca
