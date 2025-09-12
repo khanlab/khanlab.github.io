@@ -1,6 +1,6 @@
 ---
 name: Nadia Haghbin
-position: Microscopy specialist
+position: Microscopy technician
 affiliation: MIND Platform
 role: staff
 
@@ -10,4 +10,4 @@ layout: post
 
 ### About
 
-Nadia Haghbin is a Microscopy specialist at the MIND Platform, providing expert support for microscopy technologies and techniques.
+Nadia Haghbin is a Microscopy technician at the MIND Platform, providing expert support for microscopy technologies and techniques.
