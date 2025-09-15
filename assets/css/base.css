@@ -178,7 +178,6 @@ body {
 h2 {
   font-family: "Lato", sans-serif;
   color: rgb(0, 0, 80);
-  text-shadow: 0.1vw 0 #000;
   font-size: 18px;
   letter-spacing: 0.2vw;
   text-decoration: none;
@@ -239,7 +238,6 @@ a:hover {
   h2 {
     font-size: 16px;
     letter-spacing: 0.1vw;
-    text-shadow: 0.05vw 0 #000;
   }
 
   body {
@@ -293,7 +291,8 @@ a:hover {
 
   .nav-item {
     font-size: 18px;
-    letter-spacing: 0.5vw;
+    letter-spacing: 0.2vw;
+    margin-left: 2vw;
   }
 
   .nav-link:hover {
