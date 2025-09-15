@@ -3,7 +3,7 @@ name: Ariel Frame
 degree: PhD
 position: Postdoctoral fellow
 affiliation: MIND Platform
-role: staff
+role: trainee
 
 # page settings:
 layout: post

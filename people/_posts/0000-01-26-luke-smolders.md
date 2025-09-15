@@ -3,7 +3,7 @@ name: Luke Smolders
 degree: MSc
 position: Master's student
 affiliation: MIND Platform
-role: staff
+role: trainee
 
 # page settings:
 layout: post

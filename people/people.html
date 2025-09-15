@@ -8,6 +8,7 @@ style: /assets/css/people.css
 {% assign exec = "" | split: "" %}
 {% assign team = "" | split: "" %}
 {% assign staff = "" | split: "" %}
+{% assign trainee = "" | split: "" %}
 {% assign collaborator = "" | split: "" %}
 
 {% for person in site.categories.people reversed %}
@@ -18,6 +19,8 @@ style: /assets/css/people.css
       {% assign team = team | push: person %}
     {% when "staff" %}
       {% assign staff = staff | push: person %}
+    {% when "trainee" %}
+      {% assign trainee = trainee | push: person %}
     {% when "collaborator" %}
       {% assign collaborator = collaborator | push: person %}
   {% endcase %}
@@ -29,6 +32,7 @@ style: /assets/css/people.css
 {% include people/team.html %}
 {% include people/collaborator.html %}
 {% include people/staff.html %}
+{% include people/trainee.html %}
 
 
 
