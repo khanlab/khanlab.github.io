@@ -18,7 +18,6 @@
   font-weight: 700;
   letter-spacing: 0.15vw;
   text-transform: uppercase;
-  text-shadow: 0.15vw 0 #000;
   margin: 1rem 0;
   line-height: 1.2;
 }
@@ -131,7 +130,6 @@
   .platform-title {
     font-size: 36px;
     letter-spacing: 0.2vw;
-    text-shadow: 0.2vw 0 #000;
     margin: 1.5rem 0;
   }
 
