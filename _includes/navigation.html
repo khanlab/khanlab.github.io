@@ -1,11 +1,13 @@
 <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container-fluid">
     <!-- Logo -->
-    <img
-      src="/assets/images/mind_western_logo.png"
-      alt="Mesoscopic Integrated Neuroimaging Data Platform"
-      class="nav-brand"
-    />
+    <a href="/" class="navbar-brand">
+      <img
+        src="/assets/images/mind_western_logo.png"
+        alt="Mesoscopic Integrated Neuroimaging Data Platform"
+        class="nav-brand"
+      />
+    </a>
 
     <!-- Button -->
     <button
@@ -24,10 +26,10 @@
 
     <!-- Collapsible content-->
     <div class="collapse navbar-collapse" id="navbarToggler">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-align-end">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         {% for item in site.data.navigation %}
         <li class="nav-item">
-          <a href="{{ item.link }}" class="nav-link">{{ item.name }}</a>
+          <a href="{{ item.link }}" class="nav-link" {% if page.url == item.link %}aria-current="page"{% endif %}>{{ item.name }}</a>
         </li>
         {% endfor %}
       </ul>

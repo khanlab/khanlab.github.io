@@ -52,24 +52,49 @@ body {
 }
 
 .nav-brand {
-  width: 35vw;
-  margin-left: 2.5vw;
-  margin-top: 2.5vw;
-  max-width: 300px; /* Prevent logo from being too large */
+  height: 60px; /* Fixed height for consistency */
+  width: auto; /* Auto width to maintain aspect ratio */
+  max-width: min(300px, 30vw); /* Responsive max-width with fallback */
+  margin: 0.5rem 0; /* Fixed margin instead of viewport units */
+  flex-shrink: 0; /* Prevent logo from shrinking */
 }
 
 /* Enhanced navbar styles */
+.navbar {
+  padding: 0.5rem 1rem;
+  flex-wrap: nowrap; /* Prevent wrapping that causes overflow */
+  overflow: hidden; /* Prevent any content from overflowing */
+}
+
+.navbar-brand {
+  flex-shrink: 0; /* Prevent brand from shrinking */
+  margin-right: 1rem; /* Consistent spacing */
+}
+
 .navbar-light .navbar-toggler {
   color: transparent;
   border-color: transparent;
   padding: 0.5rem;
+  margin-left: auto; /* Push toggle button to the right */
+  flex-shrink: 0; /* Prevent toggle from shrinking */
+}
+
+.navbar-nav {
+  flex-wrap: wrap; /* Allow menu items to wrap if needed */
+  gap: 0.25rem; /* Consistent spacing between items */
+  overflow: hidden; /* Prevent overflow */
 }
 
 .navbar-nav .nav-link {
   color: rgb(0, 0, 80) !important;
   font-weight: 500;
-  padding: 0.5rem 1rem !important;
+  padding: 0.5rem 0.75rem !important; /* Reduced horizontal padding */
   transition: color 0.3s ease;
+  white-space: nowrap; /* Prevent text wrapping in nav items */
+  font-size: 0.95rem; /* Slightly smaller to fit better */
+  max-width: 120px; /* Maximum width to prevent overflow */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis for long text */
 }
 
 .navbar-nav .nav-link:hover,
@@ -79,14 +104,21 @@ body {
   text-underline-offset: 4px;
 }
 
+/* Current page indicator */
+.navbar-nav .nav-link[aria-current="page"] {
+  color: rgb(0, 0, 120) !important;
+  font-weight: 600;
+}
+
+/* Improve mobile toggle button */
 .animated-icon {
   width: 30px;
   height: 20px;
-  margin-top: 2.5vw;
   position: relative;
   transform: rotate(0deg);
   transition: 0.5s ease-in-out;
   cursor: pointer;
+  margin: 0; /* Remove viewport-based margins */
 }
 
 .animated-icon span {
@@ -223,16 +255,22 @@ a:hover {
   }
 
   .nav-brand {
-    width: 40vw;
-    margin-left: 1vw;
-    margin-top: 1.5vw;
+    height: 50px; /* Smaller logo on mobile */
+    max-width: min(250px, 40vw);
+  }
+
+  .navbar {
+    padding: 0.25rem 0.5rem; /* Reduced padding on mobile */
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.5rem !important;
   }
 
   .nav-item {
     font-size: 12px;
-    letter-spacing: 2px;
-    margin-top: 1.5vw;
-    margin-left: 2vw;
+    letter-spacing: 1px; /* Reduced letter spacing */
   }
 
   h2 {
@@ -245,7 +283,8 @@ a:hover {
   }
 
   .animated-icon {
-    margin-top: 1.5vw;
+    width: 25px; /* Smaller toggle button on mobile */
+    height: 18px;
   }
 }
 
@@ -256,12 +295,18 @@ a:hover {
   }
 
   .nav-brand {
-    width: 25vw;
+    height: 55px;
+    max-width: min(280px, 35vw);
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem !important;
   }
 
   .nav-item {
     font-size: 16px;
-    letter-spacing: 3px;
+    letter-spacing: 2px; /* Moderate letter spacing */
   }
 
   h2 {
@@ -281,7 +326,8 @@ a:hover {
   }
 
   .nav-brand {
-    width: 18vw;
+    height: 60px;
+    max-width: 300px; /* Fixed max-width instead of viewport units */
   }
 
   .navbar-nav {
@@ -289,10 +335,15 @@ a:hover {
     margin-right: auto;
   }
 
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem !important; /* Full padding on large screens */
+  }
+
   .nav-item {
     font-size: 18px;
-    letter-spacing: 0.2vw;
-    margin-left: 1.5vw;
+    letter-spacing: 0.1rem; /* Fixed letter spacing instead of vw */
+    margin-left: 0.75rem; /* Fixed margin instead of vw */
   }
 
   .nav-link:hover {
@@ -346,5 +397,34 @@ a:hover {
 
   .socials {
     vertical-align: bottom;
+  }
+}
+
+/* Add extra-wide screen support */
+@media only screen and (min-width: 1400px) {
+  .navbar-nav .nav-link {
+    padding: 0.5rem 1.25rem !important; /* Extra spacing on very large screens */
+    max-width: none; /* Remove max-width constraint on very large screens */
+  }
+  
+  .nav-brand {
+    max-width: 350px; /* Allow larger logo on very wide screens */
+  }
+}
+
+/* Fix for very narrow screens */
+@media only screen and (max-width: 320px) {
+  .navbar {
+    padding: 0.25rem 0.25rem;
+  }
+  
+  .nav-brand {
+    height: 45px;
+    max-width: 180px;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.25rem !important;
   }
 }
