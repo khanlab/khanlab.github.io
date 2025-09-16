@@ -1,0 +1,232 @@
+/* Platform Page Styles */
+
+.platform-section {
+  margin-bottom: 4rem;
+  padding: 2rem 0;
+}
+
+.platform-section:not(:last-child) {
+  border-bottom: 2px solid #e9ecef;
+}
+
+.platform-slide {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.slide-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.slide-title {
+  color: #2c3e50;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.slide-subtitle {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.slide-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.slide-text {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #34495e;
+}
+
+.slide-image {
+  flex: 1;
+  text-align: center;
+}
+
+.slide-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.equipment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.equipment-card {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.equipment-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.equipment-card img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+
+.equipment-title {
+  color: #2c3e50;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.equipment-description {
+  color: #7f8c8d;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.key-features {
+  background: #e8f4f8;
+  border-left: 4px solid #3498db;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.key-features h4 {
+  color: #2980b9;
+  margin-bottom: 1rem;
+}
+
+.key-features ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.key-features li {
+  margin-bottom: 0.5rem;
+  color: #34495e;
+}
+
+.platform-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 4rem 0;
+  margin-bottom: 3rem;
+  border-radius: 0 0 20px 20px;
+}
+
+.platform-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.platform-hero p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  opacity: 0.95;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .slide-content {
+    flex-direction: column;
+  }
+  
+  .platform-hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .platform-hero p {
+    font-size: 1.1rem;
+  }
+  
+  .slide-title {
+    font-size: 1.8rem;
+  }
+  
+  .equipment-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Call to Action Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #3498db;
+  color: white;
+  border: 2px solid #3498db;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+  border-color: #2980b9;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  color: #3498db;
+  border: 2px solid #3498db;
+}
+
+.btn-outline-primary:hover {
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-lg {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+}
+
+/* Animation for scroll-in effects */
+.slide-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional smooth scroll-in animation (can be enabled with JavaScript) */
+.slide-animate {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 0.8s ease forwards;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

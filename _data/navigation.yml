@@ -1,5 +1,7 @@
 - name: Home
   link: /
+- name: Platform
+  link: /platform/
 - name: People
   link: /people/
 - name: Software
