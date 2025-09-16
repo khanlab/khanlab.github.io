@@ -33,10 +33,11 @@
 .navbar {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* Prevent navbar from wrapping */
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+  min-height: 60px; /* Ensure minimum height for navbar */
 }
 
 .navbar-nav {
@@ -45,10 +46,12 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  max-width: 100%; /* Prevent overflow */
 }
 
 .navbar-expand-lg .navbar-nav {
   flex-direction: row;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens within large breakpoint */
 }
 
 .nav-item {
@@ -57,9 +60,29 @@
 
 .nav-link {
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.75rem; /* Slightly reduced padding */
   text-decoration: none;
   color: rgb(0, 0, 80);
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis for very long text */
+}
+
+/* Navbar toggler improvements */
+.navbar-toggler {
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: box-shadow 0.15s ease-in-out;
+}
+
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
 }
 
 /* Buttons */
@@ -165,11 +188,42 @@
     flex: 0 0 100%;
     max-width: 100%;
   }
+  
+  /* Improve mobile navigation */
+  .navbar-nav {
+    padding: 1rem 0;
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(0, 0, 80, 0.1);
+  }
+  
+  .navbar-nav .nav-link:last-child {
+    border-bottom: none;
+  }
 }
 
 @media (max-width: 575.98px) {
   .col-sm-6 {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+  
+  /* Extra small screens - more compact navigation */
+  .navbar {
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.75rem;
+  }
+}
+
+/* Extra responsive utilities for very large screens */
+@media (min-width: 1400px) {
+  .navbar-nav .nav-link {
+    padding: 0.5rem 1.25rem; /* Extra spacing on very large screens */
   }
 }
