@@ -5,7 +5,7 @@ position: Undergraduate student
 affiliation: Medical Biophysics
 cosupervisor:
 image: /assets/images/people/mohamed-yousif.jpg
-alumni: false
+alumni: true
 
 # social
 email: myousif9@uwo.ca

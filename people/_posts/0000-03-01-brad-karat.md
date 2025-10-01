@@ -5,7 +5,7 @@ position: PhD student
 affiliation: Neuroscience
 cosupervisor:
 image: /assets/images/people/bradley-karat.jpg
-alumni: false
+alumni: true
 
 # social
 email: bkarat@uwo.ca
