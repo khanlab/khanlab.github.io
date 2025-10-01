@@ -2,7 +2,7 @@
 name: Victor Lau
 degree:
 position: PhD Student
-affiliation: Medical Biophysics
+affiliation: Anatomy and Cell Biology
 cosupervisor: Dr. Shawn Whitehead
 image:
 alumni: false
