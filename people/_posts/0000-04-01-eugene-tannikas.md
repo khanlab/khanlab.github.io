@@ -4,7 +4,7 @@ degree:
 position: Master's Student
 affiliation: Neuroscience
 cosupervisor: Dr. Emma Duerden
-image: /assets/images/people/eugene_tannikas.png
+image: /assets/images/people/eugene_tannikas.jpg
 alumni: false
 
 # social
