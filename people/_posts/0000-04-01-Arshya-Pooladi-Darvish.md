@@ -4,8 +4,8 @@ name: Arshya Pooladi-Darvish
 position: Master's Student
 affiliation: Department of Medical Biophysics
 # cosupervisor: <if co-supervised>
-image: /assets/images/people/<user>.png
-alumni: true
+image: /assets/images/people/arshya-pooladi-darvish.jpg
+alumni: false
 
 # social
 email: apooladi@uwo.ca
