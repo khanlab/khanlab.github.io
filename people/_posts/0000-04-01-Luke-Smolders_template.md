@@ -16,7 +16,6 @@ github: lsmolder
 layout: post
 ---
 
-[This is part is in markdown format]
 
 ### About
 
