@@ -4,7 +4,7 @@ degree:
 position: Master's Student
 affiliation: Neuroscience
 cosupervisor: Dr. Emma Duerden
-image:
+image: /assets/images/people/eugene_tannikas.png
 alumni: false
 
 # social
@@ -19,4 +19,4 @@ layout: post
 ---
 
 ### About
-I am an MSc student in Neuroscience, also specializing in Developmental Biology. I received my Bachelor's degree at Western University in Medical Sciences, where I double majored in Physiology and Pathology. My current research focuses on using ultra-high field MRI scans to determine LC-amygdala connectivity in children with neurodevelopmental disorders.
+I am an MSc student in Neuroscience, also specializing in Developmental Biology. I received my Bachelor's degree at Western University in Medical Sciences, where I double majored in Physiology and Pathology. My current research uses ultra-high-field MRI to map structural and functional connectivity among key subcortical regions, particularly the amygdala and locus coeruleus, in children and adolescents.
