@@ -5,7 +5,7 @@ position: Research Software Developer Co-op Student
 affiliation: Department of Medical Biophysics
 cosupervisor: Dr. Jonathan Lau
 image: /assets/images/people/mackenzie_snyder.png
-alumni: false
+alumni: true
 
 # social
 email: msnyde26@uwo.ca

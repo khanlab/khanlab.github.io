@@ -5,7 +5,7 @@ position: Master's student
 affiliation: Medical Biophysics
 cosupervisor: Dr. Corey Baron
 image:
-alumni: false
+alumni: true
 
 # social
 email:
