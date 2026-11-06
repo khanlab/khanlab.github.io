@@ -10,9 +10,9 @@ alumni: false
 # social
 email: judyashmawy@uwo.ca
 github: JudyEssam
-orcid: orcid_user
+orcid:
 scholar: TCABkGQAAAAJ
-twitter: username
+twitter: 
 
 # page settings:
 layout: post
