@@ -3,12 +3,12 @@
 name: Judy Ashmawy
 position: Master's Student
 affiliation: Biomedical Engineering 
-cosupervisor: <if co-supervised>
-image: /assets/images/people/<Judy.Ashmawy>.png
+cosupervisor: 
+image: /assets/images/people/Judy.Ashmawy.jpg
 alumni: false
 
 # social
-email: judyashmawy@uwo.ca
+email: jashmawy@uwo.ca
 github: JudyEssam
 orcid:
 scholar: TCABkGQAAAAJ
